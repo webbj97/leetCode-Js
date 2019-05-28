@@ -1,5 +1,5 @@
 # 记录自己的LeetCode答题记录
-
+前端菜鸟
 目前的状态处于似懂非懂，对时间复杂度，空间复杂度，性能上都处于菜鸟级别。
 
 |题目   | 解答   | 通过率 | 难度 | 标签 |
@@ -13,3 +13,4 @@
 [202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|
 [371.两整数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/6.%E4%B8%A4%E6%95%B4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|56.5%|简单| 位运算 |
 [412 FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
+[283 移动0](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
