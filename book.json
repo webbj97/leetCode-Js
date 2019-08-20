@@ -1,0 +1,22 @@
+{
+    "title" : "Gitbook Use",
+    "author" : "姜博健",
+    "links" : {
+        "sidebar" : {
+            "CSDN" : "https://blog.csdn.net/jbj6568839z"
+        }
+    },
+    "plugins": [
+        "chapter-fold",
+        "page-footer-ex",
+        "code",
+        "emphasize",
+        "github",
+        "sectionx"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/webbj97"
+        }
+    }
+}
