@@ -1,2 +1,2 @@
-var a = {}
-console.log('res:', a.length);
+var a = 0029
+console.log('aa:', a);

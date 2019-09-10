@@ -35,10 +35,5 @@
 //     return nums[nums.length - k]
 // };
 
-var findKthLargest = function(nums, k) {
-    nums = quickSort(nums)
-    return nums[nums.length - k]
-};
-
 var res = findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4)
 console.log('res:', res);
