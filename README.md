@@ -12,6 +12,7 @@
 |[27.移除元素](https://blog.csdn.net/jbj6568839z/article/details/100773091)|三种|56.0%|简单|数组|
 |[28.实现strStr()](https://blog.csdn.net/jbj6568839z/article/details/100880911)|二种|38.9%|简单|字符串|
 |[34.在排序数组中查找元素的第一个和最后一个位置](https://blog.csdn.net/jbj6568839z/article/details/100882128)|三种|37.6%|中等|数组|
+|[35.搜索插入位置](https://blog.csdn.net/jbj6568839z/article/details/100886289)|三种|37.6%|中等|数组|
 |[11.盛水最多的容器](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/2.%E7%9B%9B%E6%B0%B4%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AE%B9%E5%99%A8.md)|暂为一种|53.2%|中等|数组|
 [15.三数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/3.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
 [16.最接近的三数字之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/9.%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂未一种|39.5|简单|数组
