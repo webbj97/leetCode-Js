@@ -3,10 +3,13 @@ var countAndSay = function(n) {
     if(n == 1){
         return 1
     }
-    while()
+    while(idx <= n){
+        res = 
+    }
     n = n.toString().split('')
     console.log(n,'nnn')
 };
 
 var res = countAndSay(4)
 console.log(res,'res')
+
