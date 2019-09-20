@@ -2,7 +2,7 @@
 ---
 **力求能将别人想法通过代码表达出来 -> 力求能产生想法并通过代码表达出来 -> 力求能将自己的想法抽象成方法论**
 
-|题目   | 解答   | 通过率 | 难度 | 标签 |
+|题目   | 解答   | 全网通过率 | 难度 | 标签 |
 |-------|------|--------|-----|-----|
 |[1.两数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/1.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为二种|44.9%|简单|数组|
 |[9.最接近的三数字之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/9.%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
@@ -16,6 +16,10 @@
 |[28.实现strStr()](https://blog.csdn.net/jbj6568839z/article/details/100880911)|二种|38.9%|简单|字符串|
 |[34.在排序数组中查找元素的第一个和最后一个位置](https://blog.csdn.net/jbj6568839z/article/details/100882128)|三种|37.6%|中等|数组|
 |[35.搜索插入位置](https://blog.csdn.net/jbj6568839z/article/details/100886289)|三种|37.6%|中等|数组|
+
+|[56.合并区间](https://blog.csdn.net/jbj6568839z/article/details/101053137)|一种|38.4%|中等|数组|
+|[58.最后一个单词的长度](https://blog.csdn.net/jbj6568839z/article/details/101060724)|一种|31.1%|简单|字符串|
+
 |[88.合并两个有序数组](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/4.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md)|暂为二种|42.9%|简单|数组|
 |[125.验证回文字符串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
 |[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|

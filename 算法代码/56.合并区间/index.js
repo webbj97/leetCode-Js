@@ -7,28 +7,23 @@
 // 解释: 区间 [1,3] 和 [2,6] 重叠, 将它们合并为 [1,6].
 
 var merge = function(inter) {
-    var res = [],
-        left = [],
-        right = []
-    inter.forEach(e => {
-        left.push(e[0])
-        right.push(e[1])
-    });
-    function newSort(a, b) {
-        return a - b
+    var res = [],start = 0,end = 1
+    function newSort(a,b){
+        return a[0]-b[0]
     }
-    left = left.sort(newSort)
-    right = right.sort(newSort)
-    var index = 0,
-        len = left.length - 1
-        count = 0
-    while (index < len) {
-        
-        var leftIdx = ((left[index + 1] > left[index]) ? index : index + 1) //选取左边界最小的留下
-        var rightIdx = ((right[index + 1] > right[index]) ? index + 1 : index) //选取右边界最大留下
-        res.count = 
+    inter.sort(newSort)
+    console.log(inter)
+
+    inter[0].end<inter[1].start
+    inter[j].end<inter[k].start
+    inter[i].end≥inter[k].start
+
+    if(inter[0][end] < inter[1][start] || 1 == 1){
+        console.log(inter[0][end] , inter[1][start])
     }
+
+    
     return res
 };
-var res = merge([[1, 3],[2, 6],[4, 6],[1, 10]])
+var res = merge([[2,3],[2,2],[3,3],[1,3],[5,7],[2,2],[4,6]])
 console.log(res, '结果')
