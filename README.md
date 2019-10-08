@@ -16,6 +16,7 @@
 |[28.实现strStr()](https://blog.csdn.net/jbj6568839z/article/details/100880911)|二种|38.9%|简单|字符串|
 |[34.在排序数组中查找元素的第一个和最后一个位置](https://blog.csdn.net/jbj6568839z/article/details/100882128)|三种|37.6%|中等|数组|
 |[35.搜索插入位置](https://blog.csdn.net/jbj6568839z/article/details/100886289)|三种|37.6%|中等|数组|
+|[41.缺失的第一个正数](https://blog.csdn.net/jbj6568839z/article/details/102381252)|二种|36.5%|困难|数组|
 |[56.合并区间](https://blog.csdn.net/jbj6568839z/article/details/101053137)|一种|38.4%|中等|数组|
 |[58.最后一个单词的长度](https://blog.csdn.net/jbj6568839z/article/details/101060724)|一种|31.1%|简单|字符串|
 |[75.颜色分类](https://blog.csdn.net/jbj6568839z/article/details/101294907)|一种|53.1%|中等|数组|
