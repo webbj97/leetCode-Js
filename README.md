@@ -33,7 +33,7 @@ E-mail：webbj97@163.com
 |[88.合并两个有序数组](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/4.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md)|暂为二种|42.9%|简单|数组|
 |[125.验证回文串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
 |[141.环形链表]()|二种|43.7%|简单|链表|
-|[169.求众数](https://blog.csdn.net/jbj6568839z/article/details/103072787)|一种|43.7%|简单|数组|
+|[169.求众数](https://blog.csdn.net/jbj6568839z/article/details/103072787)|二种|43.7%|简单|数组|
 |[189.旋转数组](https://blog.csdn.net/jbj6568839z/article/details/103118847)|四种|33.7%|中等|数组|
 |[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|
 |[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
