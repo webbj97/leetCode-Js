@@ -1,9 +1,11 @@
-<img src="https://raw.githubusercontent.com/webbj97/leetCode-JavaScript-bj/master/Images/leetCode-logo.png">
+<img src="./Images/leetcode-logo.png">
 <h1 align="center">记录自己的LeetCode答题记录</h1>
 <p>力求能将别人想法通过代码表达出来 -> 力求能产生想法并通过代码表达出来 -> 力求能将自己的想法抽象成方法论</p>
 
 Author：博健
 E-mail：webbj97@163.com
+
+这里是部分目录，我将题解和大概思路都记录在CSDN上
 
 |题目   | 解答   | 全网通过率 | 难度 | 标签 |
 |-------|------|--------|-----|-----|
@@ -45,7 +47,7 @@ E-mail：webbj97@163.com
 |[217.存在重复元素](https://blog.csdn.net/jbj6568839z/article/details/102975030)|四种|50.6%|简单|数组|
 |[232.用栈实现队列](https://blog.csdn.net/jbj6568839z/article/details/102684671)|一种|61.5%|简单|堆栈|
 |[237.删除链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102896829)|一种|78.5%|简单|堆栈|
-|[242.有效的字符异位词](https://blog.csdn.net/jbj6568839z/article/details/103671011)|三种|48.5%|简单|字符串 Map|
+|[242.有效的字符异位词](https://blog.csdn.net/jbj6568839z/article/details/103671011)|三种|48.5%|简单|字符串|
 |[268.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103013484)|四种|53.1%|简单|数组|
 |[283.移动0](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
 |[348.两个数组的交集](https://blog.csdn.net/jbj6568839z/article/details/102910606)|一种|66.7%|简单| 数组 |
