@@ -1,34 +1,50 @@
-// var n = 1000
-// console.log(n);
-
-// var m = 100
-// console.log(n + 1);
-// console.log(n + 2);
-// console.log(n + 3);
-
-// for (let i = 0; i < n; i++) {
-//     for (let j = 0; j < n; j++) {
-//         console.log('当前下标', j)
-//     }
+// // var a = new Object()
+// const a = [
+//     {name: 123, title: '我',subs:[1,2]},{name: 123, title: '我',subs:[1,2]},
+//     {name: 1, title: '他',subs:[1,2,3]},{name: 1, title: '你',subs:[1]},
+// ]
+// function uniqueTitle(arr){
+//     const res = new Map();
+//     let list = []
+//     var aa =  arr.filter(a => {
+//         return !res.has(a.title) && res.set(a.title, 1);
+//     })
+//     var min = aa[0].subs
+//     aa.forEach(e => {
+//         if(e.subs.length < min.length){
+//             min = e
+//         }
+//     });
+//     return min
 // }
+// var res = uniqueTitle(a)
+// console.log(res)
 
-// for (let i = 0; i < n; i * 2) {
-//     console.log('成对数增长', i)
-// }
 
-// for (let i = 0; i < Math.pow(2, n); i++) {
-//     console.log('成对数增长', i)
-// }
-
-// var res = 0
-// for(let i = 1; i < n; i++){
-//     res  = res + i //累加
-// }
-
-function fn(n) {
-    if(n == 0 || n == 1) return n
-    return fn(n-1) + fn(n-2)
+const a = [
+    {name: 123, title: '我',subs:[1,2]},{name: 123, title: '我',subs:[1,2]},
+    {name: 1, title: '他',subs:[1,2,3]},{name: 1, title: '你',subs:[1]},
+]
+function unionTitle(a){
+    return new Promise((resolve, reject) => {
+        resolve(a);
+    }).then((val)=>{
+        var res = new Map()
+        return val.filter(a => {
+            return !res.has(a.title) && res.set(a.title, 1);
+        })
+    }).then((val)=>{
+        var min = val[0].subs
+        val.forEach(e => {
+            if(e.subs.length < min.length){
+                min = e
+            }
+        });
+        return min
+    })
 }
 
-var res = fn(5)
-console.log(res,'res')
+(async function() {
+    var res = await unionTitle(a)
+    console.log(res,"res")
+}());
