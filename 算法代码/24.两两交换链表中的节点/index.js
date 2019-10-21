@@ -13,26 +13,21 @@ function ListNode(val) {
     this.val = val;
     this.next = null;
 }
-var node = {
-    element: 'head',
-    next:{
-        element: 1,
-        next:{
-            element: 2,
-            next:{
-                elememt: 3,
-                next:{
-                    element: 4,
-                    next: null
-                }
-            }
-        }
-    }
-}
 var swapPairs = function(head) {
-    current = new ListNode(head)
-    current.next = 
-    // while((current.next == null)
+    var current = {
+        val: null,
+        next: head
+    }
+    while(current.next && current.next.next){
+        var a = current.next;
+        var b = a.next;
+        var c = null;
+        c.next = b
+        a.next = b.next
+        b.next = a
+        current = c.next.next
+    }
+    return current
 };
 
 console.log(node,'node')

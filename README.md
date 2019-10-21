@@ -14,7 +14,7 @@
 |[15.三数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/3.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
 |[16.回文数](https://blog.csdn.net/jbj6568839z/article/details/100577739)|三种|56.5%|简单|字符串|
 |[20.有效的括号](https://blog.csdn.net/jbj6568839z/article/details/100701285)|二种|39.6%|简单|字符串|
-|[24.两两交换链表中的节点]()|一种|49.6%|中等|链表|
+|[24.两两交换链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102668160)|一种|62.6.6%|中等|链表|
 |[26.删除排序数组中的重复项](https://blog.csdn.net/jbj6568839z/article/details/100775071)|二种|44.9%|简单|数组|
 |[27.移除元素](https://blog.csdn.net/jbj6568839z/article/details/100773091)|三种|56.0%|简单|数组|
 |[28.实现strStr()](https://blog.csdn.net/jbj6568839z/article/details/100880911)|二种|38.9%|简单|字符串|
@@ -27,7 +27,7 @@
 |[88.合并两个有序数组](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/4.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md)|暂为二种|42.9%|简单|数组|
 |[125.验证回文字符串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
 |[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|
-|[206.反转链表]()|二种|52.2%|简单|链表|
+|[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
 |[371.两整数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/6.%E4%B8%A4%E6%95%B4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|56.5%|简单| 位运算 |
 |[412 FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
 |[283 移动0](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
