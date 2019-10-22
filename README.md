@@ -13,7 +13,7 @@
 |[14.最长公共前缀](https://blog.csdn.net/jbj6568839z/article/details/100582057)|二种|34.7%|中等|字符串|
 |[15.三数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/3.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
 |[16.回文数](https://blog.csdn.net/jbj6568839z/article/details/100577739)|三种|56.5%|简单|字符串|
-|[20.有效的括号](https://blog.csdn.net/jbj6568839z/article/details/100701285)|二种|39.6%|简单|字符串|
+|[20.有效的括号](https://blog.csdn.net/jbj6568839z/article/details/100701285)|三种|39.6%|简单|堆栈|
 |[24.两两交换链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102668160)|一种|62.6.6%|中等|链表|
 |[26.删除排序数组中的重复项](https://blog.csdn.net/jbj6568839z/article/details/100775071)|二种|44.9%|简单|数组|
 |[27.移除元素](https://blog.csdn.net/jbj6568839z/article/details/100773091)|三种|56.0%|简单|数组|
@@ -29,7 +29,8 @@
 |[141.环形链表]()|二种|43.7%|简单|链表|
 |[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|
 |[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
+|[232.用栈实现队列](https://blog.csdn.net/jbj6568839z/article/details/102684671)|一种|61.5%|简单|堆栈|
 |[371.两整数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/6.%E4%B8%A4%E6%95%B4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|56.5%|简单| 位运算 |
-|[412 FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
-|[283 移动0](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
-|[704 移动0](https://blog.csdn.net/jbj6568839z/article/details/101689329)|暂为一种|58.3%|简单| 数字 |
+|[412.FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
+|[283.移动0](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
+|[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)|暂为一种|58.3%|简单| 数字 |
