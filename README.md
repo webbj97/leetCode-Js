@@ -24,7 +24,7 @@
 |[56.合并区间](https://blog.csdn.net/jbj6568839z/article/details/101053137)|一种|38.4%|中等|数组|
 |[58.最后一个单词的长度](https://blog.csdn.net/jbj6568839z/article/details/101060724)|一种|31.1%|简单|字符串|
 |[75.颜色分类](https://blog.csdn.net/jbj6568839z/article/details/101294907)|一种|53.1%|中等|数组|
-|[80.删除排序数组中的重复项 II](https://blog.csdn.net/jbj6568839z/article/details/102820823)|一种|52.6%|中等|数组|
+|[80.删除排序数组中的重复项 II](https://blog.csdn.net/jbj6568839z/article/details/102820823)|二种|52.6%|中等|数组|
 |[88.合并两个有序数组](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/4.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md)|暂为二种|42.9%|简单|数组|
 |[125.验证回文字符串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
 |[141.环形链表]()|二种|43.7%|简单|链表|
