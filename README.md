@@ -1,4 +1,4 @@
-<img align="center" src="./Images/leetCode-logo.png">
+<img src="https://raw.githubusercontent.com/webbj97/leetCode-JavaScript-bj/master/Images/leetCode-logo.png">
 <h1 align="center">记录自己的LeetCode答题记录</h1>
 <p>力求能将别人想法通过代码表达出来 -> 力求能产生想法并通过代码表达出来 -> 力求能将自己的想法抽象成方法论</p>
 
