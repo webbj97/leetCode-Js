@@ -3,19 +3,19 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
-// var intersection = function(nums1, nums2) {
-//     var arrShort = nums1.length > nums2.length ? nums2 : nums1
-//     var arrLong = nums1.length > nums2.length ? nums1 : nums2
-//     var res = []
-//     arrShort.forEach(item => {
-//         if(arrLong.indexOf(item) >= 0){
-//             if(res.indexOf(item) == -1){
-//                 res.push(item )
-//             }
-//         }
-//     });
-//     return res
-// };
+var intersection = function(nums1, nums2) {
+    var arrShort = nums1.length > nums2.length ? nums2 : nums1
+    var arrLong = nums1.length > nums2.length ? nums1 : nums2
+    var res = []
+    arrShort.forEach(item => {
+        if(arrLong.indexOf(item) >= 0){
+            if(res.indexOf(item) == -1){
+                res.push(item )
+            }
+        }
+    });
+    return res
+};
 
 // var intersection = function(nums1, nums2) {
 //     var arrShort = nums1.length > nums2.length ? nums2 : nums1
