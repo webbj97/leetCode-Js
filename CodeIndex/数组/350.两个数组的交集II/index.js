@@ -6,14 +6,30 @@
 var intersect = function(nums1, nums2) {
     var arrShort = nums1.length > nums2.length ? nums2 : nums1
     var arrLarge = nums1.length > nums2.length ? nums1 : nums2
-    for(let i = 0; i < arrLarge.length; i++){
-        if(arrShort.indexOf(arrLarge[i]) === -1){
-            arrShort.splice(i, 1)
-            i--
+    var res = []
+    for(let i = 0; i < arrShort.length; i++){
+        let idx = arrLarge.indexOf(arrShort[i])
+        if(idx >= 0){
+            res.push(arrLarge[idx])
+            arrLarge.splice(idx, 1)
         }
     }
-    return arrShort
+    return res
 };
 
-var res = intersect([4,9,5], [9,4,9,8,4])
+// var intersect = function(nums1, nums2) {
+//     var arrShort = nums1.length > nums2.length ? nums2 : nums1
+//     var arrLarge = nums1.length > nums2.length ? nums1 : nums2
+//     for(let i = 0; i < arrShort.length; i++){
+//         let idx = arrLarge.indexOf(arrShort[i])
+//         if(idx >= 0){
+//             arrLarge.splice(idx, 1)
+//         }else{
+//             arrShort.splice(i, 1)
+//             i--
+//         }
+//     }
+//     return arrShort
+// };
+var res = intersect([3,1,2], [1,1])
 console.log(res,'res');
