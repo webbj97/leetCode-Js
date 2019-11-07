@@ -11,12 +11,14 @@ E-mail：webbj97@163.com
 |[2.两数相加]()|一种|44.9%|简单|链表|
 |[3.无重复长度的字符串](https://blog.csdn.net/jbj6568839z/article/details/102544600)|二种|31.7%|中等|字符串|
 |[4.寻找两个有序数组的中位数](https://blog.csdn.net/jbj6568839z/article/details/102454890)|一种|36.1%|困难|数组|
+<!-- |[7.整数反转]()|一种|56.1%|简单|数字| -->
 |[9.最接近的三数字之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/9.%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
 |[11.盛水最多的容器](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/2.%E7%9B%9B%E6%B0%B4%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AE%B9%E5%99%A8.md)|暂为一种|53.2%|中等|数组|
 |[14.最长公共前缀](https://blog.csdn.net/jbj6568839z/article/details/100582057)|二种|34.7%|中等|字符串|
 |[15.三数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/3.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
 |[16.回文数](https://blog.csdn.net/jbj6568839z/article/details/100577739)|三种|56.5%|简单|字符串|
 |[20.有效的括号](https://blog.csdn.net/jbj6568839z/article/details/100701285)|三种|39.6%|简单|堆栈|
+|[21.合并两个有序链表（待完善）]()|一种|39.6%|简单|链表|
 |[24.两两交换链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102668160)|一种|62.6.6%|中等|链表|
 |[26.删除排序数组中的重复项](https://blog.csdn.net/jbj6568839z/article/details/100775071)|二种|44.9%|简单|数组|
 |[27.移除元素](https://blog.csdn.net/jbj6568839z/article/details/100773091)|三种|56.0%|简单|数组|
@@ -28,8 +30,9 @@ E-mail：webbj97@163.com
 |[58.最后一个单词的长度](https://blog.csdn.net/jbj6568839z/article/details/101060724)|一种|31.1%|简单|字符串|
 |[75.颜色分类](https://blog.csdn.net/jbj6568839z/article/details/101294907)|一种|53.1%|中等|数组|
 |[80.删除排序数组中的重复项 II](https://blog.csdn.net/jbj6568839z/article/details/102820823)|二种|52.6%|中等|数组|
+|[83.删除排序链表中的重复元素（待完善）]()|一种|52.6%|简单|链表|
 |[88.合并两个有序数组](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/4.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md)|暂为二种|42.9%|简单|数组|
-|[125.验证回文字符串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
+|[125.验证回文串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
 |[141.环形链表]()|二种|43.7%|简单|链表|
 |[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|
 |[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
