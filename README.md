@@ -46,3 +46,4 @@ E-mail：webbj97@163.com
 |[371.两整数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/6.%E4%B8%A4%E6%95%B4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|56.5%|简单| 位运算 |
 |[412.FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
 |[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)|暂为一种|58.3%|简单| 数字 |
+|[1027.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103028658)|暂为一种|58.3%|简单| 数组 |
