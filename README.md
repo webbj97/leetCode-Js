@@ -35,7 +35,8 @@ E-mail：webbj97@163.com
 |[141.环形链表]()|二种|43.7%|简单|链表|
 |[169.求众数](https://blog.csdn.net/jbj6568839z/article/details/103072787)|二种|43.7%|简单|数组|
 |[189.旋转数组](https://blog.csdn.net/jbj6568839z/article/details/103118847)|四种|33.7%|中等|数组|
-|[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|暂为一种|52.2%|简单|数组|
+|[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|一种|52.2%|简单|数组|
+|[203.移除列表元素](https://blog.csdn.net/jbj6568839z/article/details/103188358)|一种|52.2%|简单|链表|
 |[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
 |[215.数组中的第K个最大元素]()|三种|59.0%|中等|数组|
 |[217.存在重复元素](https://blog.csdn.net/jbj6568839z/article/details/102975030)|四种|50.6%|简单|数组|
