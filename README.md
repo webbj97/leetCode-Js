@@ -23,6 +23,7 @@ E-mail：webbj97@163.com
 |[27.移除元素](https://blog.csdn.net/jbj6568839z/article/details/100773091)|三种|56.0%|简单|数组|
 |[28.实现strStr()](https://blog.csdn.net/jbj6568839z/article/details/100880911)|二种|38.9%|简单|字符串|
 |[29.两数相除](https://blog.csdn.net/jbj6568839z/article/details/103236924)|一种|48.1%|简单|数字|
+|[33.搜索旋转排序数组](https://blog.csdn.net/jbj6568839z/article/details/103289597)|二种|59%|简单|数组|
 |[34.在排序数组中查找元素的第一个和最后一个位置](https://blog.csdn.net/jbj6568839z/article/details/100882128)|三种|37.6%|中等|数组|
 |[35.搜索插入位置](https://blog.csdn.net/jbj6568839z/article/details/100886289)|三种|37.6%|中等|数组|
 |[41.缺失的第一个正数](https://blog.csdn.net/jbj6568839z/article/details/102381252)|二种|36.5%|困难|数组|
