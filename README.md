@@ -19,9 +19,9 @@
 |[11.盛水最多的容器](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/2.%E7%9B%9B%E6%B0%B4%E6%9C%80%E5%A4%9A%E7%9A%84%E5%AE%B9%E5%99%A8.md)|暂为一种|53.2%|中等|数组|
 |[14.最长公共前缀](https://blog.csdn.net/jbj6568839z/article/details/100582057)|二种|34.7%|中等|字符串|
 |[15.三数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/3.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|21.0%|中等|数组|
-|[16.最接近的三数之和](https://blog.csdn.net/jbj6568839z/article/details/100577739)|三种|56.5%|简单|字符串|
+|[16.最接近的三数之和](https://blog.csdn.net/jbj6568839z/article/details/103719589)|一种|56.5%|中等|数组|
 |[20.有效的括号](https://blog.csdn.net/jbj6568839z/article/details/100701285)|三种|39.6%|简单|堆栈|
-|[21.合并两个有序链表（待完善）]()|一种|39.6%|简单|链表|
+|[21.合并两个有序链表](https://blog.csdn.net/jbj6568839z/article/details/103719701)|一种|39.6%|简单|链表|
 |[24.两两交换链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102668160)|一种|62.6.6%|中等|链表|
 |[26.删除排序数组中的重复项](https://blog.csdn.net/jbj6568839z/article/details/100775071)|二种|44.9%|简单|数组|
 |[27.移除元素](https://blog.csdn.net/jbj6568839z/article/details/100773091)|三种|56.0%|简单|数组|
