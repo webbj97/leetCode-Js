@@ -1,9 +1,11 @@
 <img src="./Images/leetcode-logo.png">
 <h1 align="center">记录自己的LeetCode答题记录</h1>
-<p>力求能将别人想法通过代码表达出来 -> 力求能产生想法并通过代码表达出来 -> 力求能将自己的想法抽象成方法论</p>
 
-Author：博健
-E-mail：webbj97@163.com
+**Author：**博健  
+**花名：**余光  
+**公司：**稿定设计 前端开发工程师 19年毕业  
+**E-mail：**webbj97@163.com  
+**WX：**j565017805  
 
 这里是部分目录，我将题解和大概思路都记录在CSDN上
 
