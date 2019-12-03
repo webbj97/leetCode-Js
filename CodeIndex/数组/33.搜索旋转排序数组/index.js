@@ -24,23 +24,21 @@
 
 function deep( obj ) { 
     var arr = []
-    for( var i in obj ) { 
-        if ( typeof obj[i] === "object" ) { 
-            deep ( obj[i] ); 
-        }else{ 
-            arr.push( obj[i] ); 
-        } 
+    if(obj.isArray()){
+        // toDo 如果传入的是数组，进行处理
+    }
+    // 如果是对象，惊醒处理
+    for( var key in obj ) { 
+        if( key == 'id'){
+            arrId.push(obj[key])
+        }else if(key == 'lebel'){
+            arrLebel.push(obj[key])
+        }else{
+            deep(obj[key]); 
+        }
     } 
     return arr
 } 
-var obj = {
-    name: [1,2,3],
-    age: 11,
-    height: {
-        m: '1',
-        cm: '2',
-        dm: '3'
-    }
-}
+
 var res = deep(obj)
 console.log('res:', res);

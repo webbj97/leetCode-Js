@@ -52,4 +52,5 @@ E-mail：webbj97@163.com
 |[412.FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
 |[414.第三大的数](https://blog.csdn.net/jbj6568839z/article/details/103162957)|三种|58.3%|简单| 数组 |
 |[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)|暂为一种|58.3%|简单| 数字 |
+|[929.独特的电子邮件地址](https://blog.csdn.net/jbj6568839z/article/details/103369238)|二种|38.7%|简单| 字符串 |
 |[1027.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103028658)|暂为一种|58.3%|简单| 数组 |
