@@ -9,15 +9,24 @@
 var combinationSum = function(arr, target) {
     var res = []
     var len = arr.length - 1//边界值
-    index = 0//下标
-    for(let i = 0; i < arr.length; i++){
-        let a = target-arr[i]
-        while(a >= 0){
-            if(arr.indexOf(a) >= 0){
-                res.push()
+    //先找一个值的情况
+    //arr[len] >= 目标值，才有可能出现1=1的情况
+    if(arr[len] >= target){
+        var index = arr.indexOf(target)
+        if(index != -1) {
+            res.push([target])
+            arr.splice(index, 1)
+            while(arr[0] + arr[arr.length-1] > target){
+                arr.length = arr.length-1
             }
+            // if(arr[0] + arr[arr.length-1] > target){
+            //     console.log('arr:11', arr);
+            // }
         }
+        console.log('arr:1', arr);
         
+    }else{
+
     }
     
     return res

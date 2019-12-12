@@ -3,26 +3,19 @@
  * @return {number}
  */
 var maxSubArray = function(nums) {
-    var arr = [nums[0]]
-    var sum = nums[0], temp = 0
-    nums.forEach(e => {
-        temp = sum + e
-        if(temp > sum){
-            arr.push(e)
-            sum = temp
+    var temp = nums[0]
+    var sum = 0
+    for(let i = 0; i < nums.length; i++){
+        if(sum > 0){
+            sum += nums[i]
         }else{
-            
+            sum = nums[i]
         }
-        
-        console.log('temp:', temp);
-        
-
-        // if(temp > sum){
-        //     arr.push(e)
-        // }
-        // console.log('arr:', arr);
-    });
+        temp = Math.max(temp, sum),//维护最大的和或再大的值
+    }
+    return temp
 };
 
-var res = maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
+var res = maxSubArray([-2,1,-3,4,-1,2,1])
 console.log('结果为:', res);
+
