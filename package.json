@@ -1,0 +1,19 @@
+{
+  "name": "leetcode-javascript-bj",
+  "version": "1.0.0",
+  "description": "<img src=\"https://raw.githubusercontent.com/webbj97/leetCode-JavaScript-bj/master/Images/leetCode-logo.png\"> <h1 align=\"center\">记录自己的LeetCode答题记录</h1> <p>力求能将别人想法通过代码表达出来 -> 力求能产生想法并通过代码表达出来 -> 力求能将自己的想法抽象成方法论</p>",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbj97/leetCode-JavaScript-bj.git"
+  },
+  "author": "余光",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webbj97/leetCode-JavaScript-bj/issues"
+  },
+  "homepage": "https://github.com/webbj97/leetCode-JavaScript-bj#readme"
+}
