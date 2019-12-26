@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>15.三数之和 · Gitbook Use</title>
+        <title>26.删除排序数组中的重复项 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,10 +81,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="16.最接近的三数之和.html" />
     
-    
-    <link rel="prev" href="14.最长公共前缀.html" />
+    <link rel="prev" href="24.两两交换链表中的节点.html" />
     
 
     </head>
@@ -220,7 +218,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.7" data-path="15.三数之和.html">
+        <li class="chapter " data-level="2.7" data-path="15.三数之和.html">
             
                 <a href="15.三数之和.html">
             
@@ -285,7 +283,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.12" data-path="26.删除排序数组中的重复项.html">
+        <li class="chapter active" data-level="2.12" data-path="26.删除排序数组中的重复项.html">
             
                 <a href="26.删除排序数组中的重复项.html">
             
@@ -328,7 +326,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >15.三数之和</a>
+        <a href=".." >26.删除排序数组中的重复项</a>
     </h1>
 </div>
 
@@ -343,37 +341,57 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 align="center" id="&#x4E09;&#x6570;&#x4E4B;&#x548C;">&#x4E09;&#x6570;&#x4E4B;&#x548C;</h1>
+                                <p><img src="../Images/title-26.png" width="100%"></p>
+<h1 align="center" id="&#x5220;&#x9664;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x9879;">&#x5220;&#x9664;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x91CD;&#x590D;&#x9879;</h1>
 
 
-<h2 id="&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x66B4;&#x529B;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x66B4;&#x529B;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF09;</h2>
-<p><img src="https://img-blog.csdnimg.cn/20191226175606879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> threeSum = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums</span>) </span>{
-    nums = nums.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{
-        <span class="hljs-keyword">return</span> a - b
-    }); <span class="hljs-comment">//&#x5148;&#x6392;&#x5E8F;</span>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5728;&#x539F;&#x5730;&#x5220;&#x9664;&#x91CD;&#x590D;&#x51FA;&#x73B0;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x4F7F;&#x5F97;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x53EA;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#xFF0C;&#x8FD4;&#x56DE;&#x79FB;&#x9664;&#x540E;&#x6570;&#x7EC4;&#x7684;&#x65B0;&#x957F;&#x5EA6;&#x3002;</p>
+<p>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x989D;&#x5916;&#x7684;&#x6570;&#x7EC4;&#x7A7A;&#x95F4;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5728;&#x539F;&#x5730;&#x4FEE;&#x6539;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x5E76;&#x5728;&#x4F7F;&#x7528; O(1) &#x989D;&#x5916;&#x7A7A;&#x95F4;&#x7684;&#x6761;&#x4EF6;&#x4E0B;&#x5B8C;&#x6210;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8F93;&#x5165;</th>
+<th>&#x8F93;&#x51FA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nums = [1,1,2]</td>
+<td>&#x65B0;&#x7684;&#x957F;&#x5EA6; 2, &#x5E76;&#x4E14;&#x539F;&#x6570;&#x7EC4; nums &#x7684;&#x524D;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x88AB;&#x4FEE;&#x6539;&#x4E3A; 1, 2&#x3002;</td>
+</tr>
+<tr>
+<td>nums = [0,0,1,1,1,2,2,3,3,4]</td>
+<td>&#x65B0;&#x7684;&#x957F;&#x5EA6; 5, &#x5E76;&#x4E14;&#x539F;&#x6570;&#x7EC4; nums &#x7684;&#x524D;&#x4E94;&#x4E2A;&#x5143;&#x7D20;&#x88AB;&#x4FEE;&#x6539;&#x4E3A; 0, 1, 2, 3, 4&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h1 id="&#x601D;&#x8DEF;&#x4E00;&#x3001;&#x5E38;&#x89C4;&#x601D;&#x8DEF;">&#x601D;&#x8DEF;&#x4E00;&#x3001;&#x5E38;&#x89C4;&#x601D;&#x8DEF;</h1>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> removeDuplicates = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums</span>) </span>{
+   <span class="hljs-keyword">if</span> (nums.length == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
     <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">var</span> arr = []; <span class="hljs-comment">//&#x7ED3;&#x679C;&#x6570;&#x7EC4;</span>
-    <span class="hljs-keyword">while</span> (i &lt; nums.length - <span class="hljs-number">1</span>) {
-        <span class="hljs-keyword">var</span> a = nums[i],
-            j = i + <span class="hljs-number">1</span>,
-            k = nums.length - <span class="hljs-number">1</span>;
-        <span class="hljs-keyword">while</span> (j &lt; k) {
-            <span class="hljs-keyword">var</span> b = nums[j],
-                c = nums[k];
-            <span class="hljs-keyword">var</span> sum = a + b + c;
-            <span class="hljs-keyword">if</span> (sum == <span class="hljs-number">0</span>) arr.push([a, b, c]); <span class="hljs-comment">//&#x5B58;&#x8D77;&#x6765;</span>
-            <span class="hljs-keyword">if</span> (sum &lt;= <span class="hljs-number">0</span>)
-                <span class="hljs-keyword">while</span> (nums[j] == b &amp;&amp; j &lt; k) j++; <span class="hljs-comment">//&#x7B2C;2&#x4E2A;&#x6570;</span>
-            <span class="hljs-keyword">if</span> (sum &gt;= <span class="hljs-number">0</span>)
-                <span class="hljs-keyword">while</span> (nums[k] == c &amp;&amp; j &lt; k) k-- <span class="hljs-comment">//&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6570;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">1</span>; j &lt; nums.length; j++) {
+        <span class="hljs-keyword">if</span> (nums[j] != nums[i]) {
+            i++;
+            nums[i] = nums[j];
         }
-        <span class="hljs-keyword">while</span> (nums[i] == a &amp;&amp; i &lt; nums.length - <span class="hljs-number">1</span>) i++; <span class="hljs-comment">//&#x7B2C;&#x4E00;&#x4E2A;&#x6570;</span>
     }
-    <span class="hljs-keyword">return</span> arr
-};
+    <span class="hljs-keyword">return</span> i + <span class="hljs-number">1</span>;
+}
 </code></pre>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-26 17:52:22 </span> </footer>
+<h1 id="&#x601D;&#x8DEF;&#x4E8C;&#x3001;&#x53CC;&#x6307;&#x9488;">&#x601D;&#x8DEF;&#x4E8C;&#x3001;&#x53CC;&#x6307;&#x9488;</h1>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> removeDuplicates = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums</span>) </span>{
+   <span class="hljs-keyword">if</span> (nums.length == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">1</span>; j &lt; nums.length; j++) {
+        <span class="hljs-keyword">if</span> (nums[j] != nums[i]) {
+            i++;
+            nums[i] = nums[j];
+        }
+    }
+    <span class="hljs-keyword">return</span> i + <span class="hljs-number">1</span>;
+}
+</code></pre>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-22 18:05:53 </span> </footer>
                                 
                                 </section>
                             
@@ -400,14 +418,10 @@
 
             
                 
-                <a href="14.最长公共前缀.html" class="navigation navigation-prev " aria-label="Previous page: 14.最长公共前缀">
+                <a href="24.两两交换链表中的节点.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 24.两两交换链表中的节点">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="16.最接近的三数之和.html" class="navigation navigation-next " aria-label="Next page: 16.最接近的三数之和(待完善)">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -416,7 +430,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"15.三数之和","level":"2.7","depth":1,"next":{"title":"16.最接近的三数之和(待完善)","level":"2.8","depth":1,"path":"docs/16.最接近的三数之和.md","ref":"docs/16.最接近的三数之和.md","articles":[]},"previous":{"title":"14.最长公共前缀","level":"2.6","depth":1,"path":"docs/14.最长公共前缀.md","ref":"docs/14.最长公共前缀.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/15.三数之和.md","mtime":"2019-12-26T09:52:22.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-22T10:07:14.608Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"26.删除排序数组中的重复项","level":"2.12","depth":1,"previous":{"title":"24.两两交换链表中的节点","level":"2.11","depth":1,"path":"docs/24.两两交换链表中的节点.md","ref":"docs/24.两两交换链表中的节点.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/26.删除排序数组中的重复项.md","mtime":"2019-12-22T10:05:53.518Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-22T10:07:14.608Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

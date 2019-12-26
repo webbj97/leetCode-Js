@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>15.三数之和 · Gitbook Use</title>
+        <title>24.两两交换链表中的节点 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,10 +81,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="16.最接近的三数之和.html" />
+    <link rel="next" href="26.删除排序数组中的重复项.html" />
     
     
-    <link rel="prev" href="14.最长公共前缀.html" />
+    <link rel="prev" href="21.合并两个有序链表.html" />
     
 
     </head>
@@ -220,7 +220,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.7" data-path="15.三数之和.html">
+        <li class="chapter " data-level="2.7" data-path="15.三数之和.html">
             
                 <a href="15.三数之和.html">
             
@@ -272,7 +272,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.11" data-path="24.两两交换链表中的节点.html">
+        <li class="chapter active" data-level="2.11" data-path="24.两两交换链表中的节点.html">
             
                 <a href="24.两两交换链表中的节点.html">
             
@@ -328,7 +328,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >15.三数之和</a>
+        <a href=".." >24.两两交换链表中的节点</a>
     </h1>
 </div>
 
@@ -343,37 +343,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 align="center" id="&#x4E09;&#x6570;&#x4E4B;&#x548C;">&#x4E09;&#x6570;&#x4E4B;&#x548C;</h1>
+                                <p><img src="../Images/title-24.png" width="100%"></p>
+<h1 align="center" id="&#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;">&#x4E24;&#x4E24;&#x4EA4;&#x6362;&#x94FE;&#x8868;&#x4E2D;&#x7684;&#x8282;&#x70B9;</h1>
 
-
-<h2 id="&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x66B4;&#x529B;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x66B4;&#x529B;&#x67E5;&#x8BE2;&#x4F18;&#x5316;&#xFF09;</h2>
-<p><img src="https://img-blog.csdnimg.cn/20191226175606879.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> threeSum = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums</span>) </span>{
-    nums = nums.sort(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{
-        <span class="hljs-keyword">return</span> a - b
-    }); <span class="hljs-comment">//&#x5148;&#x6392;&#x5E8F;</span>
-    <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>;
-    <span class="hljs-keyword">var</span> arr = []; <span class="hljs-comment">//&#x7ED3;&#x679C;&#x6570;&#x7EC4;</span>
-    <span class="hljs-keyword">while</span> (i &lt; nums.length - <span class="hljs-number">1</span>) {
-        <span class="hljs-keyword">var</span> a = nums[i],
-            j = i + <span class="hljs-number">1</span>,
-            k = nums.length - <span class="hljs-number">1</span>;
-        <span class="hljs-keyword">while</span> (j &lt; k) {
-            <span class="hljs-keyword">var</span> b = nums[j],
-                c = nums[k];
-            <span class="hljs-keyword">var</span> sum = a + b + c;
-            <span class="hljs-keyword">if</span> (sum == <span class="hljs-number">0</span>) arr.push([a, b, c]); <span class="hljs-comment">//&#x5B58;&#x8D77;&#x6765;</span>
-            <span class="hljs-keyword">if</span> (sum &lt;= <span class="hljs-number">0</span>)
-                <span class="hljs-keyword">while</span> (nums[j] == b &amp;&amp; j &lt; k) j++; <span class="hljs-comment">//&#x7B2C;2&#x4E2A;&#x6570;</span>
-            <span class="hljs-keyword">if</span> (sum &gt;= <span class="hljs-number">0</span>)
-                <span class="hljs-keyword">while</span> (nums[k] == c &amp;&amp; j &lt; k) k-- <span class="hljs-comment">//&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6570;</span>
-        }
-        <span class="hljs-keyword">while</span> (nums[i] == a &amp;&amp; i &lt; nums.length - <span class="hljs-number">1</span>) i++; <span class="hljs-comment">//&#x7B2C;&#x4E00;&#x4E2A;&#x6570;</span>
+<p><img src="https://img-blog.csdnimg.cn/20191021172324481.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h2 id="&#x89E3;&#x6CD5;&#x4E00;">&#x89E3;&#x6CD5;&#x4E00;</h2>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> swapPairs = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">head</span>) </span>{
+    <span class="hljs-keyword">let</span> thead={
+        val:<span class="hljs-literal">null</span>,
+        next:head
+    } <span class="hljs-comment">//&#x53D6;&#x5DE7;&#xFF0C;&#x63D0;&#x524D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53CD;&#x5411;&#x8282;&#x70B9;</span>
+    <span class="hljs-keyword">let</span> current = thead
+    <span class="hljs-keyword">while</span>(current.next&amp;&amp;current.next.next){
+        <span class="hljs-keyword">var</span> a = current.next
+        <span class="hljs-keyword">var</span> b = a.next
+        current.next = b <span class="hljs-comment">//&#x4EE5;&#x4E0B;&#x4E09;&#x6B65;&#x4E3A;&#x4EA4;&#x6362;&#x6307;&#x5411;</span>
+        a.next = b.next
+        b.next = a
+        current = current.next.next &#x5411;&#x540E;&#x8DF3;&#x4E24;&#x4F4D;
     }
-    <span class="hljs-keyword">return</span> arr
+    <span class="hljs-keyword">return</span> thead.next
 };
 </code></pre>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-26 17:52:22 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-22 18:02:03 </span> </footer>
                                 
                                 </section>
                             
@@ -400,12 +392,12 @@
 
             
                 
-                <a href="14.最长公共前缀.html" class="navigation navigation-prev " aria-label="Previous page: 14.最长公共前缀">
+                <a href="21.合并两个有序链表.html" class="navigation navigation-prev " aria-label="Previous page: 21.合并两个有序链表">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="16.最接近的三数之和.html" class="navigation navigation-next " aria-label="Next page: 16.最接近的三数之和(待完善)">
+                <a href="26.删除排序数组中的重复项.html" class="navigation navigation-next " aria-label="Next page: 26.删除排序数组中的重复项">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -416,7 +408,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"15.三数之和","level":"2.7","depth":1,"next":{"title":"16.最接近的三数之和(待完善)","level":"2.8","depth":1,"path":"docs/16.最接近的三数之和.md","ref":"docs/16.最接近的三数之和.md","articles":[]},"previous":{"title":"14.最长公共前缀","level":"2.6","depth":1,"path":"docs/14.最长公共前缀.md","ref":"docs/14.最长公共前缀.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/15.三数之和.md","mtime":"2019-12-26T09:52:22.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-22T10:07:14.608Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"24.两两交换链表中的节点","level":"2.11","depth":1,"next":{"title":"26.删除排序数组中的重复项","level":"2.12","depth":1,"path":"docs/26.删除排序数组中的重复项.md","ref":"docs/26.删除排序数组中的重复项.md","articles":[]},"previous":{"title":"21.合并两个有序链表","level":"2.10","depth":1,"path":"docs/21.合并两个有序链表.md","ref":"docs/21.合并两个有序链表.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/24.两两交换链表中的节点.md","mtime":"2019-12-22T10:02:03.478Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-22T10:07:14.608Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
