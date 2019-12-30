@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>14.最长公共前缀 · Gitbook Use</title>
+        <title>34.在排序数组中查找元素的第一个和最后一个位置 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,10 +81,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="15.三数之和.html" />
+    <link rel="next" href="35.搜索插入位置.html" />
     
     
-    <link rel="prev" href="11.盛水最多的容器.html" />
+    <link rel="prev" href="33.搜索旋转排序数组.html" />
     
 
     </head>
@@ -207,7 +207,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.6" data-path="14.最长公共前缀.html">
+        <li class="chapter " data-level="2.6" data-path="14.最长公共前缀.html">
             
                 <a href="14.最长公共前缀.html">
             
@@ -350,7 +350,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.17" data-path="34.在排序数组中查找元素的第一个和最后一个位置.html">
+        <li class="chapter active" data-level="2.17" data-path="34.在排序数组中查找元素的第一个和最后一个位置.html">
             
                 <a href="34.在排序数组中查找元素的第一个和最后一个位置.html">
             
@@ -432,7 +432,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >14.最长公共前缀</a>
+        <a href=".." >34.在排序数组中查找元素的第一个和最后一个位置</a>
     </h1>
 </div>
 
@@ -447,88 +447,73 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="../Images/title-14.png" width="100%"></p>
-<h1 align="center" id="&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;">&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;</h1>
+                                <p><img src="../Images/title-34.png" width="100%"></p>
+<h1 align="center" id="&#x5728;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#x4E2D;&#x67E5;&#x627E;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;">&#x5728;&#x6392;&#x5E8F;&#x6570;&#x7EC4;&#x4E2D;&#x67E5;&#x627E;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x548C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;</h1>
 
+<p><img src="https://img-blog.csdnimg.cn/20190916112325985.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h1 id="&#x601D;&#x8DEF;&#x4E00;-&#xFF08;&#x7EBF;&#x6027;&#x626B;&#x63CF;&#xFF09;">&#x601D;&#x8DEF;&#x4E00; &#xFF08;&#x7EBF;&#x6027;&#x626B;&#x63CF;&#xFF09;</h1>
 <blockquote>
-<p>&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x67E5;&#x627E;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;&#x3002;</p>
+<p>&#x505A;&#x67E5;&#x8BE2;&#x9A8C;&#x8BC1;&#x65F6;&#xFF0C;&#x7B2C;&#x4E00;&#x65F6;&#x95F4;&#x8003;&#x8651;&#x5230;&#x904D;&#x5386;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> searchRange = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums, target</span>) </span>{
+    <span class="hljs-keyword">var</span> res = [<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>]
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; nums.length; i++){
+        <span class="hljs-keyword">if</span>(nums[i] == target){
+            res[<span class="hljs-number">0</span>] = i
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = nums.length<span class="hljs-number">-1</span>; i &gt;= <span class="hljs-number">0</span>; i--){
+        <span class="hljs-keyword">if</span>(nums[i] == target){
+            res[<span class="hljs-number">1</span>] = i
+            <span class="hljs-keyword">break</span>;
+        }
+    }
+    <span class="hljs-keyword">return</span> res
+};
+</code></pre>
 </blockquote>
-<p>&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x516C;&#x5171;&#x524D;&#x7F00;&#xFF0C;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; &quot;&quot;&#x3002;</p>
-<table>
-<thead>
-<tr>
-<th>&#x8F93;&#x5165;</th>
-<th>&#x8F93;&#x51FA;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]</td>
-<td>&quot;fl&quot;</td>
-</tr>
-<tr>
-<td>[&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]</td>
-<td>&quot;&quot;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x6240;&#x6709;&#x8F93;&#x5165;&#x53EA;&#x5305;&#x542B;&#x5C0F;&#x5199;&#x5B57;&#x6BCD; a-z &#x3002;</p>
-<h2 id="&#x601D;&#x8DEF;&#x4E00;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x6CD5;&#xFF09;">&#x601D;&#x8DEF;&#x4E00;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x6CD5;&#xFF09;</h2>
-<p>&#x5148;&#x786E;&#x5B9A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x4E14;&#x4E0E;&#x4E4B;&#x540E;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x6BD4;&#x5BF9;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;&#x7ED3;&#x679C;&#x76F4;&#x81F3;&#x7ED3;&#x675F;&#x3002;</p>
-<p><img src="https://img-blog.csdnimg.cn/2019090918133764.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="https://img-blog.csdnimg.cn/20190909180141364.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<pre><code class="lang-js"><span class="hljs-comment">/**
- * @param {string[]} strs
- * @return {string}
- */</span>
-
-<span class="hljs-keyword">var</span> longestCommonPrefix = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">strs</span>) </span>{
-    <span class="hljs-keyword">var</span> strLen = strs.length
-    <span class="hljs-keyword">var</span> min = strs[<span class="hljs-number">0</span>]
-    <span class="hljs-keyword">if</span> (strLen == <span class="hljs-number">0</span>) {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&quot;</span>
+<h1 id="&#x601D;&#x8DEF;&#x4E8C;&#xFF08;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#xFF09;">&#x601D;&#x8DEF;&#x4E8C;&#xFF08;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#xFF09;</h1>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> searchRange = (nums, target) =&gt; {
+  <span class="hljs-keyword">let</span> len = nums.length
+  <span class="hljs-keyword">let</span> start = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">let</span> end = len - <span class="hljs-number">1</span>
+  <span class="hljs-keyword">let</span> mid = <span class="hljs-number">-1</span>
+  <span class="hljs-keyword">let</span> flag = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">while</span>(start &lt;= end) {
+    mid = <span class="hljs-built_in">Math</span>.floor((start + end) / <span class="hljs-number">2</span>)
+    <span class="hljs-keyword">if</span>(target &lt; nums[mid]) {
+      end = mid - <span class="hljs-number">1</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (target &gt; nums[mid]) {
+      start = mid + <span class="hljs-number">1</span>
+    } <span class="hljs-keyword">else</span> {
+      flag = <span class="hljs-number">1</span>
+      <span class="hljs-keyword">break</span>
     }
-    <span class="hljs-keyword">if</span> (strLen == <span class="hljs-number">1</span>) {
-        <span class="hljs-keyword">return</span> strs[<span class="hljs-number">0</span>]
-    }
-    strs.forEach(e =&gt; {
-        <span class="hljs-keyword">if</span> (e.length &lt; min.length) {
-            min = e
-        }
-    }); <span class="hljs-comment">//&#x5F97;&#x5230;&#x6700;&#x77ED;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
-    <span class="hljs-keyword">var</span> temp = strs[<span class="hljs-number">0</span>]
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; strLen - <span class="hljs-number">1</span>; i++) {
-        <span class="hljs-keyword">let</span> res = <span class="hljs-string">&apos;&apos;</span>;
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; min.length; j++) {
-            <span class="hljs-keyword">if</span> (temp[j] == strs[i+<span class="hljs-number">1</span>][j] &amp;&amp; res.length == j) {
-                res += strs[i+<span class="hljs-number">1</span>][j]
-            }
-        }
-        temp = res
-    }
-    <span class="hljs-keyword">return</span> temp
-};
+  }
+  <span class="hljs-keyword">if</span>(!flag) {
+    <span class="hljs-keyword">return</span> [<span class="hljs-number">-1</span>, <span class="hljs-number">-1</span>]
+  }
+  start = mid
+  end = mid
+  <span class="hljs-keyword">while</span>(start - <span class="hljs-number">1</span> &gt;= <span class="hljs-number">0</span> &amp;&amp; nums[start<span class="hljs-number">-1</span>] == target) {
+    start--
+  }
+  <span class="hljs-keyword">while</span>(end + <span class="hljs-number">1</span> &lt;= len - <span class="hljs-number">1</span> &amp;&amp; nums[end + <span class="hljs-number">1</span>] == target) {
+    end++
+  }
+  <span class="hljs-keyword">return</span> [start, end]
+}
 </code></pre>
-<h2 id="&#x601D;&#x8DEF;&#x4E8C;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x4E8C;&#xFF09;">&#x601D;&#x8DEF;&#x4E8C;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x4E8C;&#xFF09;</h2>
-<p>&#x60F3;&#x8C61;&#x6570;&#x7EC4;&#x7684;&#x672B;&#x5C3E;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x77ED;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x4F9D;&#x65E7;&#x4F1A;&#x8FDB;&#x884C; S&#x200B;S&#x200B; &#x6B21;&#x6BD4;&#x8F83;&#x3002;&#x4F18;&#x5316;&#x8FD9;&#x7C7B;&#x60C5;&#x51B5;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x3002;&#x6211;&#x4EEC;&#x4ECE;&#x524D;&#x5F80;&#x540E;&#x679A;&#x4E3E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6BCF;&#x4E00;&#x5217;&#xFF0C;&#x5148;&#x6BD4;&#x8F83;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x540C;&#x5217;&#x4E0A;&#x7684;&#x5B57;&#x7B26;&#xFF08;&#x5373;&#x4E0D;&#x540C;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x540C;&#x4E0B;&#x6807;&#x7684;&#x5B57;&#x7B26;&#xFF09;&#x7136;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x5BF9;&#x4E0B;&#x4E00;&#x5217;&#x7684;&#x6BD4;&#x8F83;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> longestCommonPrefix = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">strs</span>) </span>{
-    <span class="hljs-keyword">var</span> re = <span class="hljs-string">&apos;&apos;</span>;
-    <span class="hljs-keyword">var</span> min = strs[<span class="hljs-number">0</span>]
-    strs.forEach(e =&gt; {
-        <span class="hljs-keyword">if</span> (e.length &lt; min.length) {
-            min = e
-        }
-    });<span class="hljs-comment">//&#x5F97;&#x5230;&#x6700;&#x77ED;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
-    <span class="hljs-keyword">if</span> (!strs.length) <span class="hljs-keyword">return</span> re;
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; min.length; j++) { <span class="hljs-comment">//&#x7B2C;j&#x4F4D;</span>
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>; i &lt; strs.length; i++) { <span class="hljs-comment">//&#x7B2C;i&#x4E2A;</span>
-            <span class="hljs-keyword">if</span> (strs[i][j] != strs[<span class="hljs-number">0</span>][j]) <span class="hljs-keyword">return</span> re
-        }
-        re += min[j];
-    }
-    <span class="hljs-keyword">return</span> re;
-};
-</code></pre>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-11-19 14:20:04 </span> </footer>
+<h1 id="&#x601D;&#x8DEF;&#x4E09;&#xFF08;api&#x65B9;&#x6CD5;&#xFF09;">&#x601D;&#x8DEF;&#x4E09;&#xFF08;API&#x65B9;&#x6CD5;&#xFF09;</h1>
+<blockquote>
+<p>&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x63A8;&#x8350;</p>
+</blockquote>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> searchRange = (nums, target) =&gt; {
+    <span class="hljs-keyword">return</span> [nums.indexOf(target),nums.lastIndexOf(target)]
+}
+<span class="hljs-string">`
+</span></code></pre>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-30 17:19:34 </span> </footer>
                                 
                                 </section>
                             
@@ -555,12 +540,12 @@
 
             
                 
-                <a href="11.盛水最多的容器.html" class="navigation navigation-prev " aria-label="Previous page: 11.盛水最多的容器">
+                <a href="33.搜索旋转排序数组.html" class="navigation navigation-prev " aria-label="Previous page: 33.搜索旋转排序数组">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="15.三数之和.html" class="navigation navigation-next " aria-label="Next page: 15.三数之和">
+                <a href="35.搜索插入位置.html" class="navigation navigation-next " aria-label="Next page: 35.搜索插入位置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -571,7 +556,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"14.最长公共前缀","level":"2.6","depth":1,"next":{"title":"15.三数之和","level":"2.7","depth":1,"path":"docs/15.三数之和.md","ref":"docs/15.三数之和.md","articles":[]},"previous":{"title":"11.盛水最多的容器","level":"2.5","depth":1,"path":"docs/11.盛水最多的容器.md","ref":"docs/11.盛水最多的容器.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/14.最长公共前缀.md","mtime":"2019-11-19T06:20:04.722Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-30T09:45:18.146Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"34.在排序数组中查找元素的第一个和最后一个位置","level":"2.17","depth":1,"next":{"title":"35.搜索插入位置","level":"2.18","depth":1,"path":"docs/35.搜索插入位置.md","ref":"docs/35.搜索插入位置.md","articles":[]},"previous":{"title":"33.搜索旋转排序数组","level":"2.16","depth":1,"path":"docs/33.搜索旋转排序数组.md","ref":"docs/33.搜索旋转排序数组.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/34.在排序数组中查找元素的第一个和最后一个位置.md","mtime":"2019-12-30T09:19:34.256Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-30T09:45:18.146Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

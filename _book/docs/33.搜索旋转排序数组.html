@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>14.最长公共前缀 · Gitbook Use</title>
+        <title>33.搜索旋转排序数组 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -81,10 +81,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="15.三数之和.html" />
+    <link rel="next" href="34.在排序数组中查找元素的第一个和最后一个位置.html" />
     
     
-    <link rel="prev" href="11.盛水最多的容器.html" />
+    <link rel="prev" href="29.两数相除.html" />
     
 
     </head>
@@ -207,7 +207,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.6" data-path="14.最长公共前缀.html">
+        <li class="chapter " data-level="2.6" data-path="14.最长公共前缀.html">
             
                 <a href="14.最长公共前缀.html">
             
@@ -337,7 +337,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.16" data-path="33.搜索旋转排序数组.html">
+        <li class="chapter active" data-level="2.16" data-path="33.搜索旋转排序数组.html">
             
                 <a href="33.搜索旋转排序数组.html">
             
@@ -432,7 +432,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >14.最长公共前缀</a>
+        <a href=".." >33.搜索旋转排序数组</a>
     </h1>
 </div>
 
@@ -447,88 +447,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="../Images/title-14.png" width="100%"></p>
-<h1 align="center" id="&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;">&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;</h1>
+                                <p><img src="../Images/title-33.png" width="100%"></p>
+<h1 align="center" id="&#x641C;&#x7D22;&#x65CB;&#x8F6C;&#x6392;&#x5E8F;&#x6570;&#x7EC4;">&#x641C;&#x7D22;&#x65CB;&#x8F6C;&#x6392;&#x5E8F;&#x6570;&#x7EC4;</h1> 
 
-<blockquote>
-<p>&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x67E5;&#x627E;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x957F;&#x516C;&#x5171;&#x524D;&#x7F00;&#x3002;</p>
-</blockquote>
-<p>&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x516C;&#x5171;&#x524D;&#x7F00;&#xFF0C;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; &quot;&quot;&#x3002;</p>
-<table>
-<thead>
-<tr>
-<th>&#x8F93;&#x5165;</th>
-<th>&#x8F93;&#x51FA;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]</td>
-<td>&quot;fl&quot;</td>
-</tr>
-<tr>
-<td>[&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]</td>
-<td>&quot;&quot;</td>
-</tr>
-</tbody>
-</table>
-<p>&#x6240;&#x6709;&#x8F93;&#x5165;&#x53EA;&#x5305;&#x542B;&#x5C0F;&#x5199;&#x5B57;&#x6BCD; a-z &#x3002;</p>
-<h2 id="&#x601D;&#x8DEF;&#x4E00;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x6CD5;&#xFF09;">&#x601D;&#x8DEF;&#x4E00;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x6CD5;&#xFF09;</h2>
-<p>&#x5148;&#x786E;&#x5B9A;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x4E14;&#x4E0E;&#x4E4B;&#x540E;&#x7684;&#x6BCF;&#x4E00;&#x9879;&#x6BD4;&#x5BF9;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;&#x7ED3;&#x679C;&#x76F4;&#x81F3;&#x7ED3;&#x675F;&#x3002;</p>
-<p><img src="https://img-blog.csdnimg.cn/2019090918133764.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><img src="https://img-blog.csdnimg.cn/20190909180141364.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<pre><code class="lang-js"><span class="hljs-comment">/**
- * @param {string[]} strs
- * @return {string}
- */</span>
-
-<span class="hljs-keyword">var</span> longestCommonPrefix = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">strs</span>) </span>{
-    <span class="hljs-keyword">var</span> strLen = strs.length
-    <span class="hljs-keyword">var</span> min = strs[<span class="hljs-number">0</span>]
-    <span class="hljs-keyword">if</span> (strLen == <span class="hljs-number">0</span>) {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&quot;</span>
-    }
-    <span class="hljs-keyword">if</span> (strLen == <span class="hljs-number">1</span>) {
-        <span class="hljs-keyword">return</span> strs[<span class="hljs-number">0</span>]
-    }
-    strs.forEach(e =&gt; {
-        <span class="hljs-keyword">if</span> (e.length &lt; min.length) {
-            min = e
-        }
-    }); <span class="hljs-comment">//&#x5F97;&#x5230;&#x6700;&#x77ED;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
-    <span class="hljs-keyword">var</span> temp = strs[<span class="hljs-number">0</span>]
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; strLen - <span class="hljs-number">1</span>; i++) {
-        <span class="hljs-keyword">let</span> res = <span class="hljs-string">&apos;&apos;</span>;
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; min.length; j++) {
-            <span class="hljs-keyword">if</span> (temp[j] == strs[i+<span class="hljs-number">1</span>][j] &amp;&amp; res.length == j) {
-                res += strs[i+<span class="hljs-number">1</span>][j]
-            }
-        }
-        temp = res
-    }
-    <span class="hljs-keyword">return</span> temp
+<p><img src="https://img-blog.csdnimg.cn/20191128112340190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h2 id="&#x89E3;&#x6CD5;&#x4E00;&#xFF08;indexof&#xFF09;">&#x89E3;&#x6CD5;&#x4E00;&#xFF08;indexOf&#xFF09;</h2>
+<p><img src="https://img-blog.csdnimg.cn/20191128105759557.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;">
+&#x8FD9;&#x79CD;&#x601D;&#x8DEF;&#x867D;&#x7136;&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x7EDD;&#x5BF9;&#x4E0D;&#x662F;&#x9762;&#x8BD5;&#x5B98;&#x5E0C;&#x671B;&#x770B;&#x5230;&#x4E86;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> search = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums, target</span>) </span>{
+    <span class="hljs-keyword">return</span> nums.indexOf(target)
 };
 </code></pre>
-<h2 id="&#x601D;&#x8DEF;&#x4E8C;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x4E8C;&#xFF09;">&#x601D;&#x8DEF;&#x4E8C;&#xFF08;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x4E8C;&#xFF09;</h2>
-<p>&#x60F3;&#x8C61;&#x6570;&#x7EC4;&#x7684;&#x672B;&#x5C3E;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x77ED;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x4F9D;&#x65E7;&#x4F1A;&#x8FDB;&#x884C; S&#x200B;S&#x200B; &#x6B21;&#x6BD4;&#x8F83;&#x3002;&#x4F18;&#x5316;&#x8FD9;&#x7C7B;&#x60C5;&#x51B5;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x6C34;&#x5E73;&#x626B;&#x63CF;&#x3002;&#x6211;&#x4EEC;&#x4ECE;&#x524D;&#x5F80;&#x540E;&#x679A;&#x4E3E;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x6BCF;&#x4E00;&#x5217;&#xFF0C;&#x5148;&#x6BD4;&#x8F83;&#x6BCF;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x540C;&#x5217;&#x4E0A;&#x7684;&#x5B57;&#x7B26;&#xFF08;&#x5373;&#x4E0D;&#x540C;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x540C;&#x4E0B;&#x6807;&#x7684;&#x5B57;&#x7B26;&#xFF09;&#x7136;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x5BF9;&#x4E0B;&#x4E00;&#x5217;&#x7684;&#x6BD4;&#x8F83;&#x3002;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> longestCommonPrefix = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">strs</span>) </span>{
-    <span class="hljs-keyword">var</span> re = <span class="hljs-string">&apos;&apos;</span>;
-    <span class="hljs-keyword">var</span> min = strs[<span class="hljs-number">0</span>]
-    strs.forEach(e =&gt; {
-        <span class="hljs-keyword">if</span> (e.length &lt; min.length) {
-            min = e
-        }
-    });<span class="hljs-comment">//&#x5F97;&#x5230;&#x6700;&#x77ED;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
-    <span class="hljs-keyword">if</span> (!strs.length) <span class="hljs-keyword">return</span> re;
-    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>; j &lt; min.length; j++) { <span class="hljs-comment">//&#x7B2C;j&#x4F4D;</span>
-        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>; i &lt; strs.length; i++) { <span class="hljs-comment">//&#x7B2C;i&#x4E2A;</span>
-            <span class="hljs-keyword">if</span> (strs[i][j] != strs[<span class="hljs-number">0</span>][j]) <span class="hljs-keyword">return</span> re
-        }
-        re += min[j];
+<h2 id="&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#xFF09;">&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#xFF09;</h2>
+<p><img src="https://img-blog.csdnimg.cn/20191128112257100.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h3 id="&#x4EE5;&#x4E8C;&#x5206;&#x641C;&#x7D22;&#x4E3A;&#x57FA;&#x672C;&#x601D;&#x8DEF;">&#x4EE5;&#x4E8C;&#x5206;&#x641C;&#x7D22;&#x4E3A;&#x57FA;&#x672C;&#x601D;&#x8DEF;</h3>
+<p>&#x7B80;&#x8981;&#x6765;&#x8BF4;&#xFF1A;</p>
+<ul>
+<li><p>nums[0] &lt;= nums[mid]&#xFF08;0 - mid&#x4E0D;&#x5305;&#x542B;&#x65CB;&#x8F6C;&#xFF09;&#x4E14;nums[0] &lt;= target &lt;= nums[mid] &#x65F6; high &#x5411;&#x524D;&#x89C4;&#x7EA6;&#xFF1B;</p>
+</li>
+<li><p>nums[mid] &lt; nums[0]&#xFF08;0 - mid&#x5305;&#x542B;&#x65CB;&#x8F6C;&#xFF09;&#xFF0C;target &lt;= nums[mid] &lt; nums[0] &#x65F6;&#x5411;&#x524D;&#x89C4;&#x7EA6;&#xFF08;target &#x5728;&#x65CB;&#x8F6C;&#x4F4D;&#x7F6E;&#x5230; mid &#x4E4B;&#x95F4;&#xFF09;</p>
+</li>
+<li><p>nums[mid] &lt; nums[0]&#xFF0C;nums[mid] &lt; nums[0] &lt;= target &#x65F6;&#x5411;&#x524D;&#x89C4;&#x7EA6;&#xFF08;target &#x5728; 0 &#x5230;&#x65CB;&#x8F6C;&#x4F4D;&#x7F6E;&#x4E4B;&#x95F4;&#xFF09;</p>
+</li>
+</ul>
+<p>&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x5411;&#x540E;&#x89C4;&#x7EA6;&#xFF1A;</p>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;nums[mid] &lt; nums[0]&#xFF0C;nums[0] &gt; target&#xFF0C;target &gt; nums[mid] &#x4E09;&#x9879;&#x5747;&#x4E3A;&#x771F;&#x6216;&#x8005;&#x53EA;&#x6709;&#x4E00;&#x9879;&#x4E3A;&#x771F;&#x65F6;&#x5411;&#x540E;&#x89C4;&#x7EA6;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#x5230;&#x539F;&#x6570;&#x7EC4;&#x4E3A;&#x6709;&#x9650;&#x5236;&#x7684;&#x6709;&#x5E8F;&#x6570;&#x7EC4;&#xFF08;&#x9664;&#x4E86;&#x5728;&#x67D0;&#x4E2A;&#x70B9;&#x4F1A;&#x7A81;&#x7136;&#x4E0B;&#x964D;&#x5916;&#x5747;&#x4E3A;&#x5347;&#x5E8F;&#x6570;&#x7EC4;&#xFF09;</strong></p>
+<ul>
+<li><p><code>if nums[0] &lt;= nums[I] &#x90A3;&#x4E48; nums[0] &#x5230; nums[i]</code>&#x4E3A;&#x6709;&#x5E8F;&#x6570;&#x7EC4;,&#x90A3;&#x4E48;&#x5F53; <code>nums[0] &lt;= target &lt;= nums[i]</code>&#x65F6;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5728; <code>0~i</code> &#x8303;&#x56F4;&#x5185;&#x67E5;&#x627E;&#xFF1B;</p>
+</li>
+<li><p><code>if nums[i] &lt; nums[0]</code>&#x90A3;&#x4E48;&#x5728; <code>0~i</code> &#x533A;&#x95F4;&#x7684;&#x67D0;&#x4E2A;&#x70B9;&#x5904;&#x53D1;&#x751F;&#x4E86;&#x4E0B;&#x964D;&#xFF08;&#x65CB;&#x8F6C;&#xFF09;&#xFF0C;&#x90A3;&#x4E48; <code>i+1</code>&#x5230;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x533A;&#x95F4;&#x4E3A;&#x6709;&#x5E8F;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x4E14;&#x6240;&#x6709;&#x7684;&#x6570;&#x5B57;&#x90FD;&#x662F;&#x5C0F;&#x4E8E; nums[0] &#x4E14;&#x5927;&#x4E8E; nums[i].</p>
+</li>
+<li>&#x5F53;target&#x4E0D;&#x5C5E;&#x4E8E; <code>nums[0] &#x5230; nums[i]</code>&#x65F6;<code>&#xFF08;target &lt;= nums[i] &lt; nums[0]  || nums[i] &lt; nums[0] &lt;= target&#xFF09;</code>&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5728; <code>0~i</code> &#x533A;&#x95F4;&#x5185;&#x67E5;&#x627E;&#x3002;</li>
+</ul>
+<p>&#x4E0A;&#x8FF0;&#x4E09;&#x79CD;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x603B;&#x7ED3;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-js">    nums[<span class="hljs-number">0</span>] &lt;= target &lt;= nums[i]
+               target &lt;= nums[i] &lt; nums[<span class="hljs-number">0</span>]
+                         nums[i] &lt; nums[<span class="hljs-number">0</span>] &lt;= target
+</code></pre>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FDB;&#x884C;&#x4E09;&#x9879;&#x5224;&#x65AD;&#xFF1A;</p>
+<p>(nums[0] &lt;= target)&#xFF0C; (target &lt;= nums[i]) &#xFF0C;(nums[i] &lt; nums[0])&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x60F3;&#x77E5;&#x9053;&#x8FD9;&#x4E09;&#x9879;&#x4E2D;&#x6709;&#x54EA;&#x4E24;&#x9879;&#x4E3A;&#x771F;&#xFF08;&#x660E;&#x663E;&#x8FD9;&#x4E09;&#x9879;&#x4E0D;&#x53EF;&#x80FD;&#x5747;&#x4E3A;&#x771F;&#x6216;&#x5747;&#x4E3A;&#x5047;&#xFF08;&#x56E0;&#x4E3A;&#x8FD9;&#x4E09;&#x9879;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x60C5;&#x51B5;&#xFF09;&#xFF09;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x53EA;&#x9700;&#x8981;&#x533A;&#x522B;&#x51FA;&#x8FD9;&#x4E09;&#x9879;&#x4E2D;&#x6709;&#x4E24;&#x9879;&#x4E3A;&#x771F;&#x8FD8;&#x662F;&#x53EA;&#x6709;&#x4E00;&#x9879;&#x4E3A;&#x771F;&#x3002;</p>
+<p>&#x4F7F;&#x7528; &#x201C;&#x5F02;&#x6216;&#x201D; &#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x7684;&#x5F97;&#x5230;&#x4E0A;&#x8FF0;&#x7ED3;&#x679C;&#xFF08;&#x4E24;&#x9879;&#x4E3A;&#x771F;&#x65F6;&#x5F02;&#x6216;&#x7ED3;&#x679C;&#x4E3A;&#x5047;&#xFF0C;&#x4E00;&#x9879;&#x4E3A;&#x771F;&#x65F6;&#x5F02;&#x6216;&#x7ED3;&#x679C;&#x4E3A;&#x771F;&#xFF0C;&#x53EF;&#x4EE5;&#x753B;&#x771F;&#x503C;&#x8868;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF09;</p>
+<p>&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x4E0D;&#x65AD;&#x505A;&#x5C0F; target &#x53EF;&#x80FD;&#x4F4D;&#x4E8E;&#x7684;&#x533A;&#x95F4;&#x76F4;&#x5230; low==high&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C; nums[low]==target &#x5219;&#x627E;&#x5230;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x7B49;&#x5219;&#x8BF4;&#x660E;&#x8BE5;&#x6570;&#x7EC4;&#x91CC;&#x6CA1;&#x6709;&#x6B64;&#x9879;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> search = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums, target</span>) </span>{
+    <span class="hljs-keyword">var</span> left = <span class="hljs-number">0</span>, right = nums.length - <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">while</span> (left &lt; right) {
+        <span class="hljs-keyword">var</span> mid = <span class="hljs-built_in">Math</span>.floor((left+right)/<span class="hljs-number">2</span>)
+        <span class="hljs-keyword">if</span> ((nums[<span class="hljs-number">0</span>] &gt; target) ^ (nums[<span class="hljs-number">0</span>] &gt; nums[mid]) ^ (target &gt; nums[mid]))
+            left = mid + <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">else</span>
+            right = mid;
     }
-    <span class="hljs-keyword">return</span> re;
+    <span class="hljs-keyword">return</span> left == right &amp;&amp; nums[left] == target ? left : <span class="hljs-number">-1</span>;
 };
 </code></pre>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-11-19 14:20:04 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-30 17:04:04 </span> </footer>
                                 
                                 </section>
                             
@@ -555,12 +529,12 @@
 
             
                 
-                <a href="11.盛水最多的容器.html" class="navigation navigation-prev " aria-label="Previous page: 11.盛水最多的容器">
+                <a href="29.两数相除.html" class="navigation navigation-prev " aria-label="Previous page: 29.两数相除">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="15.三数之和.html" class="navigation navigation-next " aria-label="Next page: 15.三数之和">
+                <a href="34.在排序数组中查找元素的第一个和最后一个位置.html" class="navigation navigation-next " aria-label="Next page: 34.在排序数组中查找元素的第一个和最后一个位置">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -571,7 +545,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"14.最长公共前缀","level":"2.6","depth":1,"next":{"title":"15.三数之和","level":"2.7","depth":1,"path":"docs/15.三数之和.md","ref":"docs/15.三数之和.md","articles":[]},"previous":{"title":"11.盛水最多的容器","level":"2.5","depth":1,"path":"docs/11.盛水最多的容器.md","ref":"docs/11.盛水最多的容器.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/14.最长公共前缀.md","mtime":"2019-11-19T06:20:04.722Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-30T09:45:18.146Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"33.搜索旋转排序数组","level":"2.16","depth":1,"next":{"title":"34.在排序数组中查找元素的第一个和最后一个位置","level":"2.17","depth":1,"path":"docs/34.在排序数组中查找元素的第一个和最后一个位置.md","ref":"docs/34.在排序数组中查找元素的第一个和最后一个位置.md","articles":[]},"previous":{"title":"29.两数相除","level":"2.15","depth":1,"path":"docs/29.两数相除.md","ref":"docs/29.两数相除.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/33.搜索旋转排序数组.md","mtime":"2019-12-30T09:04:04.071Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-30T09:45:18.146Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
