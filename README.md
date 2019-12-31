@@ -1,18 +1,17 @@
 <img src="./Images/leetcode-logo.png">
 <h1 align="center">记录自己的LeetCode答题记录</h1>
 
-**Author：**博健  
-**花名：**余光  
-**公司：**稿定设计 前端开发工程师 19年毕业  
-**E-mail：**webbj97@163.com  
-**WX：**j565017805  
+**Author：** 博健  
+**花名：** 余光  
+**公司：** 稿定设计 前端开发工程师 19年毕业  
+**E-mail：** webbj97@163.com  
+**WX：** j565017805  
 
 这里是部分目录，我将题解和大概思路都记录在CSDN上
 
 |题目   | 解答   | 全网通过率 | 难度 | 标签 |
 |-------|------|--------|-----|-----|
 |[1.两数之和](https://blog.csdn.net/jbj6568839z/article/details/102570422)|三种|44.9%|简单|数组|
-|[2.两数相加]()|一种|44.9%|简单|链表|
 |[3.无重复长度的字符串](https://blog.csdn.net/jbj6568839z/article/details/102544600)|二种|31.7%|中等|字符串|
 |[4.寻找两个有序数组的中位数](https://blog.csdn.net/jbj6568839z/article/details/102454890)|一种|36.1%|困难|数组|
 |[9.回文数](https://blog.csdn.net/jbj6568839z/article/details/100577739)|三种|21.0%|中等|字符串|
@@ -37,13 +36,18 @@
 |[75.颜色分类](https://blog.csdn.net/jbj6568839z/article/details/101294907)|一种|53.1%|中等|数组|
 |[80.删除排序数组中的重复项 II](https://blog.csdn.net/jbj6568839z/article/details/102820823)|二种|52.6%|中等|数组|
 |[83.删除排序链表中的重复元素（待完善）]()|一种|52.6%|简单|链表|
-|[88.合并两个有序数组](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/4.%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84.md)|暂为二种|42.9%|简单|数组|
-|[125.验证回文串](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/8.%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2.md)|暂为一种|52.2%|简单|字符串|
-|[141.环形链表]()|二种|43.7%|简单|链表|
-|[169.求众数](https://blog.csdn.net/jbj6568839z/article/details/103072787)|二种|43.7%|简单|数组|
+|[88.合并两个有序数组](https://blog.csdn.net/jbj6568839z/article/details/103770701)|暂为二种|42.9%|简单|数组|
+|[125.验证回文串](https://blog.csdn.net/jbj6568839z/article/details/103770778)|暂为一种|52.2%|简单|字符串|
+|[136.只出现一次的数字](https://blog.csdn.net/jbj6568839z/article/details/103770889)|暂为一种|32.2%|简单|字符串|
+|[141.环形链表](https://blog.csdn.net/jbj6568839z/article/details/103771359)|二种|43.7%|简单|链表|
+|[169.求众数](https://blog.csdn.net/jbj6568839z/article/details/103072787)|三种|43.7%|中等|数组|
+|[182.查找重复的电子邮箱](https://blog.csdn.net/jbj6568839z/article/details/103782092)|二种|60.7%|中等|SQL|
 |[189.旋转数组](https://blog.csdn.net/jbj6568839z/article/details/103118847)|四种|33.7%|中等|数组|
-|[202.快乐数](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/5.%E5%BF%AB%E4%B9%90%E6%95%B0.md)|一种|52.2%|简单|数组|
+|[196.删除重复的电子邮箱](https://blog.csdn.net/jbj6568839z/article/details/103783469)|1种|63.7%|简单|SQL|
+|[197.上升的温度]()|四种|33.7%|中等|SQL|
+|[202.快乐数](https://blog.csdn.net/jbj6568839z/article/details/103785419)|二种|52.2%|简单|数组|
 |[203.移除列表元素](https://blog.csdn.net/jbj6568839z/article/details/103188358)|一种|52.2%|简单|链表|
+|[204.计算质数]()|一种|32.2%|简单|数字|
 |[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
 |[215.数组中的第K个最大元素]()|三种|59.0%|中等|数组|
 |[217.存在重复元素](https://blog.csdn.net/jbj6568839z/article/details/102975030)|四种|50.6%|简单|数组|
