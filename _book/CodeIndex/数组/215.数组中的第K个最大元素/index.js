@@ -35,5 +35,23 @@
 //     return nums[nums.length - k]
 // };
 
-var res = findKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4)
+// var findKthLargest = function(nums, k) {
+//     var res = []
+//     nums.forEach(e => {
+//         if(res.length < k){
+//             res.push(e)
+//         }else if(e > res[0]){
+//             res[0] = e
+//         }
+//         res.sort((a, b)=>{
+//             return a-b
+//         })
+//     });
+//     return res[0]
+// };
+
+
+
+
+var res = findKthLargest([3,2,1,5,6,4], 2)
 console.log('res:', res);

@@ -47,15 +47,16 @@
 |[197.上升的温度]()|四种|33.7%|中等|SQL|
 |[202.快乐数](https://blog.csdn.net/jbj6568839z/article/details/103785419)|二种|52.2%|简单|数组|
 |[203.移除列表元素](https://blog.csdn.net/jbj6568839z/article/details/103188358)|一种|52.2%|简单|链表|
-|[204.计算质数]()|一种|32.2%|简单|数字|
+|[204.计算质数](https://blog.csdn.net/jbj6568839z/article/details/103785917)|一种|32.2%|简单|数字|
 |[206.反转链表](https://blog.csdn.net/jbj6568839z/article/details/102662509)|一种|52.2%|简单|链表|
-|[215.数组中的第K个最大元素]()|三种|59.0%|中等|数组|
+|[215.数组中的第K个最大元素](https://blog.csdn.net/jbj6568839z/article/details/103803945)|三种|59.0%|中等|数组|
 |[217.存在重复元素](https://blog.csdn.net/jbj6568839z/article/details/102975030)|四种|50.6%|简单|数组|
+|[219.存在重复元素II](https://blog.csdn.net/jbj6568839z/article/details/103804946)|二种|40.6%|困难|数组|
 |[232.用栈实现队列](https://blog.csdn.net/jbj6568839z/article/details/102684671)|一种|61.5%|简单|堆栈|
 |[237.删除链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102896829)|一种|78.5%|简单|堆栈|
 |[242.有效的字符异位词](https://blog.csdn.net/jbj6568839z/article/details/103671011)|三种|48.5%|简单|字符串|
 |[268.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103013484)|四种|53.1%|简单|数组|
-|[283.移动0](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
+|[283.移动零]()|暂为一种|58.3%|简单| 数组字符串 |
 |[348.两个数组的交集](https://blog.csdn.net/jbj6568839z/article/details/102910606)|一种|66.7%|简单| 数组 |
 |[350.两个数组的交集II](https://blog.csdn.net/jbj6568839z/article/details/102931466)|二种|50.1%|简单| 数组 |
 |[371.两整数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/6.%E4%B8%A4%E6%95%B4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|56.5%|简单| 位运算 |

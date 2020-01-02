@@ -81,6 +81,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="206.反转链表.html" />
+    
     
     <link rel="prev" href="203.移除列表元素.html" />
     
@@ -608,6 +610,71 @@
             
         </li>
     
+        <li class="chapter " data-level="2.37" data-path="206.反转链表.html">
+            
+                <a href="206.反转链表.html">
+            
+                    
+                    206.反转链表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.38" data-path="215.数组中的第K个最大元素.html">
+            
+                <a href="215.数组中的第K个最大元素.html">
+            
+                    
+                    215.数组中的第K个最大元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.39" data-path="217.存在重复元素.html">
+            
+                <a href="217.存在重复元素.html">
+            
+                    
+                    217.存在重复元素
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.40" data-path="219.存在重复元素II.html">
+            
+                <a href="219.存在重复元素II.html">
+            
+                    
+                    219.存在重复元素II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.41" data-path="237.删除链表中的节点.html">
+            
+                <a href="237.删除链表中的节点.html">
+            
+                    
+                    237.删除链表中的节点
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
@@ -756,43 +823,43 @@
 </code></pre>
 <p><img src="https://img-blog.csdnimg.cn/20191231175231247.png" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
 <ul>
-<li>&#x4F18;&#x5316;&#x8FB9;&#x754C;&#xFF0C;&#x52C9;&#x5F3A;&#x901A;&#x8FC7;&#xFF0C;&#x60E8;&#x4E0D;&#x5FCD;&#x7779;&#x3002;&#x3002;&#x3002;<pre><code class="lang-js"><span class="hljs-comment">// &#x5224;&#x65AD;&#x6574;&#x6570; n &#x662F;&#x5426;&#x662F;&#x7D20;&#x6570;</span>
+<li>&#x4F18;&#x5316;&#x8FB9;&#x754C;&#xFF0C;&#x52C9;&#x5F3A;&#x901A;&#x8FC7;&#xFF0C;&#x60E8;&#x4E0D;&#x5FCD;&#x7779;&#x3002;&#x3002;&#x3002;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5224;&#x65AD;&#x6574;&#x6570; n &#x662F;&#x5426;&#x662F;&#x7D20;&#x6570;</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isPrime</span>(<span class="hljs-params">n</span>) </span>{
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i * i &lt;= n; i++) <span class="hljs-comment">//&#x8FD9;&#x662F;&#x552F;&#x4E00;&#x533A;&#x522B;</span>
-      <span class="hljs-keyword">if</span> (n % i == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<span class="hljs-comment">// &#x6709;&#x5176;&#x4ED6;&#x6574;&#x9664;&#x56E0;&#x5B50;</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i * i &lt;= n; i++) <span class="hljs-comment">//&#x8FD9;&#x662F;&#x552F;&#x4E00;&#x533A;&#x522B;</span>
+        <span class="hljs-keyword">if</span> (n % i == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<span class="hljs-comment">// &#x6709;&#x5176;&#x4ED6;&#x6574;&#x9664;&#x56E0;&#x5B50;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
 }
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">countPrimes</span>(<span class="hljs-params">n</span>) </span>{
-  <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; n; i++){
-      <span class="hljs-keyword">if</span> (isPrime(i)) count++;
-  }
-  <span class="hljs-keyword">return</span> count;
+    <span class="hljs-keyword">var</span> count = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; n; i++){
+        <span class="hljs-keyword">if</span> (isPrime(i)) count++;
+    }
+    <span class="hljs-keyword">return</span> count;
 }
 </code></pre>
-</li>
-</ul>
 <p><img src="https://img-blog.csdnimg.cn/20191231175934374.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
 <h2 id="&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x5254;&#x9664;&#x6CD5;&#xFF09;">&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x5254;&#x9664;&#x6CD5;&#xFF09;</h2>
 <ul>
-<li>&#x901A;&#x8FC7; <code>let j = 2 * i; j &lt; n; j += i</code>&#xFF0C;&#x4E0D;&#x65AD;&#x7684;&#x5254;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x6BD4;&#x5BF9;&#x7684;&#x5143;&#x7D20;<pre><code class="lang-js"><span class="hljs-keyword">var</span> countPrimes = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
-  <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>
-  signs = []
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; n; i++) {
-      <span class="hljs-keyword">if</span> (!signs[i]) {
-          count++
-          <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">2</span> * i; j &lt; n; j += i) {
-              signs[j] = <span class="hljs-literal">true</span>
-          }
-      }
-  }
-  <span class="hljs-keyword">return</span> count
+<li>&#x901A;&#x8FC7; <code>let j = 2 * i; j &lt; n; j += i</code>&#xFF0C;&#x4E0D;&#x65AD;&#x7684;&#x5254;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x6BD4;&#x5BF9;&#x7684;&#x5143;&#x7D20;</li>
+</ul>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> countPrimes = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n</span>) </span>{
+    <span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>
+    signs = []
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">2</span>; i &lt; n; i++) {
+        <span class="hljs-keyword">if</span> (!signs[i]) {
+            count++
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> j = <span class="hljs-number">2</span> * i; j &lt; n; j += i) {
+                signs[j] = <span class="hljs-literal">true</span>
+            }
+        }
+    }
+    <span class="hljs-keyword">return</span> count
 };
 </code></pre>
-</li>
-</ul>
 <p><img src="https://img-blog.csdnimg.cn/20191231165220420.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-31 18:17:39 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2019-12-31 18:22:39 </span> </footer>
                                 
                                 </section>
                             
@@ -819,10 +886,14 @@
 
             
                 
-                <a href="203.移除列表元素.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 203.移除列表元素">
+                <a href="203.移除列表元素.html" class="navigation navigation-prev " aria-label="Previous page: 203.移除列表元素">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="206.反转链表.html" class="navigation navigation-next " aria-label="Next page: 206.反转链表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -831,7 +902,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"204.计算质数","level":"2.36","depth":1,"next":{"title":"二分","level":"3.1","depth":1,"ref":"","articles":[]},"previous":{"title":"203.移除列表元素","level":"2.35","depth":1,"path":"docs/203.移除列表元素.md","ref":"docs/203.移除列表元素.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/204.计算质数.md","mtime":"2019-12-31T10:17:39.800Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-31T10:18:19.512Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"204.计算质数","level":"2.36","depth":1,"next":{"title":"206.反转链表","level":"2.37","depth":1,"path":"docs/206.反转链表.md","ref":"docs/206.反转链表.md","articles":[]},"previous":{"title":"203.移除列表元素","level":"2.35","depth":1,"path":"docs/203.移除列表元素.md","ref":"docs/203.移除列表元素.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z"}},"gitbook":"*"},"file":{"path":"docs/204.计算质数.md","mtime":"2019-12-31T10:22:39.593Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-02T08:47:19.392Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
