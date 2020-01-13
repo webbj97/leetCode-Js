@@ -56,12 +56,18 @@
 |[237.删除链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102896829)|一种|78.5%|简单|堆栈|
 |[242.有效的字符异位词](https://blog.csdn.net/jbj6568839z/article/details/103671011)|三种|48.5%|简单|字符串|
 |[268.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103013484)|四种|53.1%|简单|数组|
-|[283.移动零]()|暂为一种|58.3%|简单| 数组字符串 |
-|[348.两个数组的交集](https://blog.csdn.net/jbj6568839z/article/details/102910606)|一种|66.7%|简单| 数组 |
+|[283.移动零](https://blog.csdn.net/jbj6568839z/article/details/103807327)|一种|58.3%|简单| 数组 |
+|[344.反转字符串](https://blog.csdn.net/jbj6568839z/article/details/103871523)|二种|68.3%|简单| 字符串 |
+|[349.两个数组的交集](https://blog.csdn.net/jbj6568839z/article/details/102910606)|一种|66.7%|简单| 数组 |
 |[350.两个数组的交集II](https://blog.csdn.net/jbj6568839z/article/details/102931466)|二种|50.1%|简单| 数组 |
-|[371.两整数之和](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/6.%E4%B8%A4%E6%95%B4%E6%95%B0%E4%B9%8B%E5%92%8C.md)|暂为一种|56.5%|简单| 位运算 |
-|[412.FizzBuzz](https://github.com/webbj97/leetCode-JavaScript-bj/blob/master/code/7.FizzBuzz.md)|暂为一种|58.3%|简单| 数组字符串 |
+|[371.两整数之和](https://blog.csdn.net/jbj6568839z/article/details/103871988)|一种|56.5%|简单| 位运算 |
+|[412.FizzBuzz](https://blog.csdn.net/jbj6568839z/article/details/103872997)|一种|58.3%|简单| 数组字符串 |
 |[414.第三大的数](https://blog.csdn.net/jbj6568839z/article/details/103162957)|三种|58.3%|简单| 数组 |
+|[442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)| 两种 |62.7% | 中等 | 数组| 
+|[448.找到所有数组中消失的数字](https://blog.csdn.net/jbj6568839z/article/details/103876938)| 一种 |55.1% | 简单 | 数组|
+|[509.斐波那契数](https://blog.csdn.net/jbj6568839z/article/details/103879679)| 三种 |55.1% | 简单 | 数字|
+|[595.大的国家](https://blog.csdn.net/jbj6568839z/article/details/103954435)| 一种 | 77.5 | 简单 | SQL |
+|[645.错误的集合]()|两种| 46.3% | 中等 | 数组 |
 |[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)|暂为一种|58.3%|简单| 数字 |
 |[929.独特的电子邮件地址](https://blog.csdn.net/jbj6568839z/article/details/103369238)|二种|38.7%|简单| 字符串 |
 |[1027.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103028658)|暂为一种|58.3%|简单| 数组 |
