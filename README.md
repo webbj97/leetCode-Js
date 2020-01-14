@@ -1,13 +1,24 @@
 <img src="./Images/leetcode-logo.png">
 <h1 align="center">记录自己的LeetCode答题记录</h1>
 
-**Author：** 博健  
-**花名：** 余光  
-**公司：** 稿定设计 前端开发工程师 19年毕业  
-**E-mail：** webbj97@163.com  
-**WX：** j565017805  
+**Author：** 博健
+**花名：** 余光
+**公司：** 稿定设计 前端开发工程师 19年毕业
+**E-mail：** webbj97@163.com
+**WX：** j565017805
 
-这里是部分目录，我将题解和大概思路都记录在CSDN上
+##### 瞧一瞧～
+* 博健的LeetCode题解：[Gitbook版本传送门](https://webbj97.github.io/leetCode-JavaScript-bj/)
+* 博健的LeetCode题解：[CSDN传送门](https://blog.csdn.net/jbj6568839z/article/details/103808459)
+* 有趣的CSS：[Gitbook传送门](https://webbj97.github.io/Interesting-CSS/)
+* 前端进阶笔记：[Gitbook传送门](https://webbj97.github.io/summary/)
+
+##### 做题路线（ ** =当前阶段）
+* 阶段一（解题总数，单题题解数至上）**
+* 阶段二（解题质量至上）
+* 阶段三（算法思想至上）
+
+## 答题记录
 
 |题目   | 解答   | 全网通过率 | 难度 | 标签 |
 |-------|------|--------|-----|-----|
@@ -63,11 +74,14 @@
 |[371.两整数之和](https://blog.csdn.net/jbj6568839z/article/details/103871988)|一种|56.5%|简单| 位运算 |
 |[412.FizzBuzz](https://blog.csdn.net/jbj6568839z/article/details/103872997)|一种|58.3%|简单| 数组字符串 |
 |[414.第三大的数](https://blog.csdn.net/jbj6568839z/article/details/103162957)|三种|58.3%|简单| 数组 |
-|[442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)| 两种 |62.7% | 中等 | 数组| 
+|[442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)| 两种 |62.7% | 中等 | 数组|
 |[448.找到所有数组中消失的数字](https://blog.csdn.net/jbj6568839z/article/details/103876938)| 一种 |55.1% | 简单 | 数组|
 |[509.斐波那契数](https://blog.csdn.net/jbj6568839z/article/details/103879679)| 三种 |55.1% | 简单 | 数字|
 |[595.大的国家](https://blog.csdn.net/jbj6568839z/article/details/103954435)| 一种 | 77.5 | 简单 | SQL |
-|[645.错误的集合]()|两种| 46.3% | 中等 | 数组 |
-|[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)|暂为一种|58.3%|简单| 数字 |
+|[645.错误的集合](https://blog.csdn.net/jbj6568839z/article/details/103954698)|三种| 46.3% | 中等 | 数组 |
+|[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)| 一种|58.3%|简单| 数字 |
+|[709.转换成小写字母](https://blog.csdn.net/jbj6568839z/article/details/103962770)| 一种 | 75.2% | 简单 | 字符串|
+|[771.宝石与石头](https://blog.csdn.net/jbj6568839z/article/details/103970745)| 一种 |81.4% | 简单 | 字符串 |
+|[860.柠檬水找零](https://blog.csdn.net/jbj6568839z/article/details/103977622)| 一种 |53.4% |简单  | 背包问题|
 |[929.独特的电子邮件地址](https://blog.csdn.net/jbj6568839z/article/details/103369238)|二种|38.7%|简单| 字符串 |
 |[1027.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103028658)|暂为一种|58.3%|简单| 数组 |
