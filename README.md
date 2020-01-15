@@ -1,4 +1,4 @@
-<img src="./Images/leetcode-logo.png">
+<img src="./Images/leetcode-logo.jpg">
 <h1 align="center">记录自己的LeetCode答题记录</h1>
 
 **Author：** 博健
@@ -83,5 +83,8 @@
 |[709.转换成小写字母](https://blog.csdn.net/jbj6568839z/article/details/103962770)| 一种 | 75.2% | 简单 | 字符串|
 |[771.宝石与石头](https://blog.csdn.net/jbj6568839z/article/details/103970745)| 一种 |81.4% | 简单 | 字符串 |
 |[860.柠檬水找零](https://blog.csdn.net/jbj6568839z/article/details/103977622)| 一种 |53.4% |简单  | 背包问题|
+|[905.按奇偶排序数组](https://blog.csdn.net/jbj6568839z/article/details/103983479)| 二种 |73.4% |简单  | 数组|
+|[922.按奇偶排序数组II](https://blog.csdn.net/jbj6568839z/article/details/103984185)| 二种 |43.4% |简单  | 数组|
 |[929.独特的电子邮件地址](https://blog.csdn.net/jbj6568839z/article/details/103369238)|二种|38.7%|简单| 字符串 |
+|[961.重复N次的元素](https://blog.csdn.net/jbj6568839z/article/details/103417166)| 二种 | 66.1%|简单| 数组 |
 |[1027.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103028658)|暂为一种|58.3%|简单| 数组 |
