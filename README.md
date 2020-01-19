@@ -1,5 +1,5 @@
 <img src="./Images/leetcode-logo.jpg">
-<h1 align="center">记录自己的LeetCode答题记录</h1>
+<h1 align="center">JavaScript算法与数据结构与LeetCode</h1>
 
 **Author：** 博健
 **花名：** 余光
@@ -18,7 +18,42 @@
 * 阶段二（解题质量至上）
 * 阶段三（算法思想至上）
 
-## 答题记录
+## 数据结构专题
+
+专题仍然分几种，比如数组、对象层面的，比如对象经典算法
+
+* 数据类型分类
+    * 链表
+    * 双向链表
+    * 队列
+    * 栈
+    * 哈希表
+    * 堆 - 最大堆 & 最小堆
+    * 优先队列
+    * 字典树
+    * 树
+    * 图
+    * 过滤器
+    * 并查集
+* 算法主题
+    * 数学
+    * 集合
+    * 字符串
+    * 搜索
+    * 排序
+    * 链表
+    * 树
+    * 图
+    * 加密
+* 算法范式——算法范式是一种通用方法，基于一类算法的设计。这是比算法更高的抽象，就像算法是比计算机程序更高的抽象。
+    * BF 算法 - 查找/搜索 所有可能性并选择最佳解决方案
+    * 贪心法 - 在当前选择最佳选项，不考虑以后情况
+    * 分治法 - 将问题分成较小的部分，然后解决这些部分
+    * 动态编程 - 使用以前找到的子解决方案构建解决方案
+    * 回溯法 - 类似于 BF 算法 试图产生所有可能的解决方案，但每次生成解决方案测试如果它满足所有条件，那么只有继续生成后续解决方案。否则回溯并继续寻找不同路径的解决方案。
+    * Branch & Bound - 记住在回溯搜索的每个阶段找到的成本最低的解决方案，并使用到目前为止找到的成本最小值作为下限。以便丢弃成本大于最小值的解决方案。通常，使用 BFS 遍历以及状态空间树的 DFS 遍历。
+
+## LeetCode题解
 
 |题目   | 解答   | 全网通过率 | 难度 | 标签 |
 |-------|------|--------|-----|-----|
@@ -44,6 +79,7 @@
 |[53.最大子序合](https://blog.csdn.net/jbj6568839z/article/details/103490020)|一种|48.3%|简单|数组|
 |[56.合并区间](https://blog.csdn.net/jbj6568839z/article/details/101053137)|一种|38.4%|中等|数组|
 |[58.最后一个单词的长度](https://blog.csdn.net/jbj6568839z/article/details/101060724)|一种|31.1%|简单|字符串|
+|[66.加一](https://blog.csdn.net/jbj6568839z/article/details/104018682)|一种|45.1%|简单|数组|
 |[75.颜色分类](https://blog.csdn.net/jbj6568839z/article/details/101294907)|一种|53.1%|中等|数组|
 |[80.删除排序数组中的重复项 II](https://blog.csdn.net/jbj6568839z/article/details/102820823)|二种|52.6%|中等|数组|
 |[83.删除排序链表中的重复元素（待完善）]()|一种|52.6%|简单|链表|
@@ -81,10 +117,14 @@
 |[645.错误的集合](https://blog.csdn.net/jbj6568839z/article/details/103954698)|三种| 46.3% | 中等 | 数组 |
 |[704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)| 一种|58.3%|简单| 数字 |
 |[709.转换成小写字母](https://blog.csdn.net/jbj6568839z/article/details/103962770)| 一种 | 75.2% | 简单 | 字符串|
+|[724.寻找数组的中心索引](https://blog.csdn.net/jbj6568839z/article/details/104017023)| 一种 | 45.7% | 简单 | 数组|
+|[747.至少是其他数字两倍的最大数](https://blog.csdn.net/jbj6568839z/article/details/104017993)| 二种 | 35.2% | 简单 | 数组|
 |[771.宝石与石头](https://blog.csdn.net/jbj6568839z/article/details/103970745)| 一种 |81.4% | 简单 | 字符串 |
 |[860.柠檬水找零](https://blog.csdn.net/jbj6568839z/article/details/103977622)| 一种 |53.4% |简单  | 背包问题|
 |[905.按奇偶排序数组](https://blog.csdn.net/jbj6568839z/article/details/103983479)| 二种 |73.4% |简单  | 数组|
 |[922.按奇偶排序数组II](https://blog.csdn.net/jbj6568839z/article/details/103984185)| 二种 |43.4% |简单  | 数组|
 |[929.独特的电子邮件地址](https://blog.csdn.net/jbj6568839z/article/details/103369238)|二种|38.7%|简单| 字符串 |
 |[961.重复N次的元素](https://blog.csdn.net/jbj6568839z/article/details/103417166)| 二种 | 66.1%|简单| 数组 |
-|[1027.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103028658)|暂为一种|58.3%|简单| 数组 |
+|[976.三角形的最大周长](https://blog.csdn.net/jbj6568839z/article/details/103986774)| 一种 | 54.5% |简单| 数组 |
+|[977.有序数组的平方](https://blog.csdn.net/jbj6568839z/article/details/103993031)| 二种 | 71.0% |简单| 数组 |
+|[1207.独一无二的出现次数](https://blog.csdn.net/jbj6568839z/article/details/103028658)| 一种|58.3%|简单| 数组 |
