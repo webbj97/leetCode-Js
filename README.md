@@ -112,6 +112,7 @@
 |[414.第三大的数](https://blog.csdn.net/jbj6568839z/article/details/103162957)|三种|58.3%|简单| 数组 |
 |[442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)| 两种 |62.7% | 中等 | 数组|
 |[448.找到所有数组中消失的数字](https://blog.csdn.net/jbj6568839z/article/details/103876938)| 一种 |55.1% | 简单 | 数组|
+|[498.对角线遍历](https://blog.csdn.net/jbj6568839z/article/details/104036988) | 一种 |  34.7 | 中等 | 数组|
 |[509.斐波那契数](https://blog.csdn.net/jbj6568839z/article/details/103879679)| 三种 |55.1% | 简单 | 数字|
 |[595.大的国家](https://blog.csdn.net/jbj6568839z/article/details/103954435)| 一种 | 77.5 | 简单 | SQL |
 |[645.错误的集合](https://blog.csdn.net/jbj6568839z/article/details/103954698)|三种| 46.3% | 中等 | 数组 |
