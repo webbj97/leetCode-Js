@@ -1,15 +1,21 @@
 <h1 align="center">LeetCode题解Js版</h1>
 
-<img src="https://img.shields.io/badge/language-javaScript-brightgreen"/>
-<a href="https://blog.csdn.net/jbj6568839z" target="_blank">
-    <img src="https://img.shields.io/badge/CSDN-博客同步更新-orange"/>
-</a>
-<a href="https://github.com/webbj97" target="_blank">
-    <img src="https://img.shields.io/badge/github-star-critical"/>
-</a>
-<a href="https://www.gitbook.com/" target="_blank">
-    <img src="https://img.shields.io/badge/gitbook-platform-ff69b4"/>
-</a>
+<p align="center">
+    <img src="https://img.shields.io/badge/language-javaScript-brightgreen"/>
+    <a href="https://blog.csdn.net/jbj6568839z" target="_blank">
+        <img src="https://img.shields.io/badge/CSDN-博客同步更新-orange"/>
+    </a>
+    <a href="https://github.com/webbj97" target="_blank">
+        <img src="https://img.shields.io/badge/github-star-critical"/>
+    </a>
+    <a href="https://www.gitbook.com/" target="_blank">
+        <img src="https://img.shields.io/badge/-gitbook-ff69b4"/>
+    </a>
+</p>
+<p align="center">
+    <a href="https://webbj97.github.io/leetCode-Js/">https://webbj97.github.io/leetCode-Js/</a>
+</p>
+
 
 ### 题外话
 
@@ -192,3 +198,5 @@
 * 会添加专题系列，例如 动态规划专题、快慢指针专题
 
 ### License
+
+<a href="./LICENSE" target="_blank">Apache-2.0</a>
