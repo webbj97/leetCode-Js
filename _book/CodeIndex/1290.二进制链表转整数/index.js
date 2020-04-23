@@ -15,12 +15,22 @@
  * @param {ListNode} head
  * @return {number}
  */
+// var getDecimalValue = function(head) {
+//     var current = head
+//     var num = 0
+//     while(current){
+//         num = num * 2 + current.val;
+//         current = current.next
+//     }
+//     return num
+// };
+
 var getDecimalValue = function(head) {
     var current = head
-    var num = 0
+    var str = ''
     while(current){
-        num = num * 2 + cur.val;
+        str += current.val;
         current = current.next
     }
-    return num
+    return parseInt(str, 2)
 };
