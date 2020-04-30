@@ -109,6 +109,7 @@
 * [242.有效的字符异位词](https://blog.csdn.net/jbj6568839z/article/details/103671011)
 * [268.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103013484)
 * [283.移动零](https://blog.csdn.net/jbj6568839z/article/details/103807327)
+* [287.寻找重复数](https://blog.csdn.net/jbj6568839z/article/details/103862896)
 
 ——————301-400
 
@@ -122,21 +123,27 @@
 * [412.FizzBuzz](https://blog.csdn.net/jbj6568839z/article/details/103872997)
 * [414.第三大的数](https://blog.csdn.net/jbj6568839z/article/details/103162957)
 * [442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)
+* [443.压缩字符串](https://blog.csdn.net/jbj6568839z/article/details/105736734)
 * [448.找到所有数组中消失的数字](https://blog.csdn.net/jbj6568839z/article/details/103876938)
 * [498.对角线遍历](https://blog.csdn.net/jbj6568839z/article/details/104036988)
 
 ——————501-600
 
+* [504.七进制数](https://blog.csdn.net/jbj6568839z/article/details/105790806)
 * [509.斐波那契数](https://blog.csdn.net/jbj6568839z/article/details/103879679)
 * [595.大的国家](https://blog.csdn.net/jbj6568839z/article/details/103954435)
 
 ——————601-700
 
+* [627.交换工资](https://blog.csdn.net/jbj6568839z/article/details/105736934)
+* [633.平方数之和](https://blog.csdn.net/jbj6568839z/article/details/105736934)
 * [645.错误的集合](https://blog.csdn.net/jbj6568839z/article/details/103954698)
 
 ——————701-800
 
+* [703.数据流中的第K大元素](https://blog.csdn.net/jbj6568839z/article/details/105763926)
 * [704.二分查找](https://blog.csdn.net/jbj6568839z/article/details/101689329)
+* [707.设计链表](https://blog.csdn.net/jbj6568839z/article/details/105840330)
 * [709.转换成小写字母](https://blog.csdn.net/jbj6568839z/article/details/103962770)
 * [724.寻找数组的中心索引](https://blog.csdn.net/jbj6568839z/article/details/104017023)
 * [747.至少是其他数字两倍的最大数](https://blog.csdn.net/jbj6568839z/article/details/104017993)
@@ -144,11 +151,16 @@
 
 ——————801-900
 
+* [836.矩形重叠](https://blog.csdn.net/jbj6568839z/article/details/104960225)
 * [860.柠檬水找零](https://blog.csdn.net/jbj6568839z/article/details/103977622)
+* [876.链表的中间结点](https://blog.csdn.net/jbj6568839z/article/details/105042706)
+* [892.三维形体的表面积](https://blog.csdn.net/jbj6568839z/article/details/105093755)
+* [896.单调数列](https://blog.csdn.net/jbj6568839z/article/details/105768637)
 
 ——————901-1000
 
 * [905.按奇偶排序数组](https://blog.csdn.net/jbj6568839z/article/details/103983479)
+* [912.排序数组](https://blog.csdn.net/jbj6568839z/article/details/105769755)
 * [922.按奇偶排序数组II](https://blog.csdn.net/jbj6568839z/article/details/103984185)
 * [929.独特的电子邮件地址](https://blog.csdn.net/jbj6568839z/article/details/103369238)
 * [961.重复N次的元素](https://blog.csdn.net/jbj6568839z/article/details/103417166)
@@ -157,6 +169,12 @@
 
 ——————1001及之后
 * [1207.独一无二的出现次数](https://blog.csdn.net/jbj6568839z/article/details/103028658)
+* [1290.二进制链表转整数](https://blog.csdn.net/jbj6568839z/article/details/105674429)
+* [1295.统计位数为偶数的数字](https://blog.csdn.net/jbj6568839z/article/details/105586464)
+* [1299.将每个元素替换为右侧最大元素](https://blog.csdn.net/jbj6568839z/article/details/105678657)
+* [1323.6和9组成的最大数字](https://blog.csdn.net/jbj6568839z/article/details/105680729)
+* [1365.有多少小于当前数字的数字](https://blog.csdn.net/jbj6568839z/article/details/105652250)
+* [1389.按既定顺序创建目标数组](https://blog.csdn.net/jbj6568839z/article/details/105770848)
 
 ### 数据结构分类
 
