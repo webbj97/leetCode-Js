@@ -3,7 +3,7 @@
 <p align="center">
     <img src="https://img.shields.io/badge/language-javaScript-brightgreen"/>
     <a href="https://blog.csdn.net/jbj6568839z" target="_blank">
-        <img src="https://img.shields.io/badge/CSDN-博客同步更新-orange"/>
+        <img src="https://img.shields.io/badge/CSDN-同步更新-orange"/>
     </a>
     <a href="https://github.com/webbj97" target="_blank">
         <img src="https://img.shields.io/badge/github-star-critical"/>
@@ -19,7 +19,7 @@
 
 ### 题外话
 
-* 博健的LeetCode题解：[传送门](https://webbj97.github.io/leetCode-Js/)
+* LeetCode题解：[传送门](https://webbj97.github.io/leetCode-Js/)
 * 前端笔记：[传送门](https://webbj97.github.io/summary/)
 
 ### 项目背景
