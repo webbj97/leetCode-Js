@@ -88,6 +88,8 @@
 * [125.验证回文串](https://blog.csdn.net/jbj6568839z/article/details/103770778)
 * [136.只出现一次的数字](https://blog.csdn.net/jbj6568839z/article/details/103770889)
 * [141.环形链表](https://blog.csdn.net/jbj6568839z/article/details/103771359)
+* [142.环形链表II](https://blog.csdn.net/jbj6568839z/article/details/105953898)
+* [160.相交链表](https://blog.csdn.net/jbj6568839z/article/details/105955671)
 * [167.两数之和II - 输入有序数组](https://blog.csdn.net/jbj6568839z/article/details/103778465)
 * [169.求众数](https://blog.csdn.net/jbj6568839z/article/details/103072787)
 * [182.查找重复的电子邮箱（sql）](https://blog.csdn.net/jbj6568839z/article/details/103782092)
