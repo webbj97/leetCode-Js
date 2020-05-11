@@ -44,6 +44,7 @@
 **花名：** 余光<br/>
 **E-mail：** webbj97@163.com<br/>
 **个人博客：** [CSDN](https://blog.csdn.net/jbj6568839z)
+**GitHub：** [传送门](https://github.com/webbj97)
 
 ### LeetCode题解传送门
 
@@ -106,7 +107,8 @@
 * [215.数组中的第K个最大元素](https://blog.csdn.net/jbj6568839z/article/details/103803945)
 * [217.存在重复元素](https://blog.csdn.net/jbj6568839z/article/details/102975030)
 * [219.存在重复元素II](https://blog.csdn.net/jbj6568839z/article/details/103804946)
-* [232.用栈实现队列](https://blog.csdn.net/jbj6568839z/article/details/102684671)|
+* [232.用栈实现队列](https://blog.csdn.net/jbj6568839z/article/details/102684671)
+* [234.回文链表](https://blog.csdn.net/jbj6568839z/article/details/105976157)
 * [237.删除链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102896829)
 * [242.有效的字符异位词](https://blog.csdn.net/jbj6568839z/article/details/103671011)
 * [268.缺失数字](https://blog.csdn.net/jbj6568839z/article/details/103013484)
@@ -115,6 +117,7 @@
 
 ——————301-400
 
+* [328.奇偶链表](https://blog.csdn.net/jbj6568839z/article/details/105972870)
 * [344.反转字符串](https://blog.csdn.net/jbj6568839z/article/details/103871523)
 * [349.两个数组的交集](https://blog.csdn.net/jbj6568839z/article/details/102910606)
 * [350.两个数组的交集II](https://blog.csdn.net/jbj6568839z/article/details/102931466)
