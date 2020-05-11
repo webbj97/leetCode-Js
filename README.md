@@ -40,11 +40,10 @@
 
 ### 关于我
 
-**decs：** 19年毕业的前端开发一枚，沉迷Js<br/>
-**花名：** 余光<br/>
-**E-mail：** webbj97@163.com<br/>
-**个人博客：** [CSDN](https://blog.csdn.net/jbj6568839z)
-**GitHub：** [传送门](https://github.com/webbj97)
+* **decs：** 19年毕业的前端开发一枚，沉迷Js
+* **E-mail：** webbj97@163.com
+* **个人博客：** [CSDN](https://blog.csdn.net/jbj6568839z)
+* **GitHub：** [传送门](https://github.com/webbj97)
 
 ### LeetCode题解传送门
 
@@ -127,6 +126,7 @@
 
 * [412.FizzBuzz](https://blog.csdn.net/jbj6568839z/article/details/103872997)
 * [414.第三大的数](https://blog.csdn.net/jbj6568839z/article/details/103162957)
+* [430.扁平化多级双向链表](https://blog.csdn.net/jbj6568839z/article/details/106055733)
 * [442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)
 * [443.压缩字符串](https://blog.csdn.net/jbj6568839z/article/details/105736734)
 * [448.找到所有数组中消失的数字](https://blog.csdn.net/jbj6568839z/article/details/103876938)
@@ -216,10 +216,7 @@
 
 ### 预告
 
-* 未来会完善LeetCode题解的数量
-* 会提高LeetCode的质量
-* 会添加专题系列，例如 动态规划专题、快慢指针专题
+* 完善LeetCode题解的数量
+* 提高LeetCode的质量
+* 添加专题系列，例如 动态规划专题、快慢指针专题
 
-### License
-
-<a href="./LICENSE" target="_blank">Apache-2.0</a>
