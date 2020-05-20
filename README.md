@@ -87,6 +87,7 @@
 
 * [125.验证回文串](https://blog.csdn.net/jbj6568839z/article/details/103770778)
 * [136.只出现一次的数字](https://blog.csdn.net/jbj6568839z/article/details/103770889)
+* [137.只出现一次的数字II](https://blog.csdn.net/jbj6568839z/article/details/106189353)
 * [141.环形链表](https://blog.csdn.net/jbj6568839z/article/details/103771359)
 * [142.环形链表II](https://blog.csdn.net/jbj6568839z/article/details/105953898)
 * [160.相交链表](https://blog.csdn.net/jbj6568839z/article/details/105955671)
@@ -121,6 +122,8 @@
 * [349.两个数组的交集](https://blog.csdn.net/jbj6568839z/article/details/102910606)
 * [350.两个数组的交集II](https://blog.csdn.net/jbj6568839z/article/details/102931466)
 * [371.两整数之和](https://blog.csdn.net/jbj6568839z/article/details/103871988)
+* [374.猜数字大小](https://blog.csdn.net/jbj6568839z/article/details/106208957)
+* [389.找不同]()
 
 ——————401-500
 
