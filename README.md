@@ -123,7 +123,7 @@
 * [350.两个数组的交集II](https://blog.csdn.net/jbj6568839z/article/details/102931466)
 * [371.两整数之和](https://blog.csdn.net/jbj6568839z/article/details/103871988)
 * [374.猜数字大小](https://blog.csdn.net/jbj6568839z/article/details/106208957)
-* [389.找不同]()
+* [389.找不同](https://blog.csdn.net/jbj6568839z/article/details/106236988)
 
 ——————401-500
 
