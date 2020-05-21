@@ -123,6 +123,7 @@
 * [350.两个数组的交集II](https://blog.csdn.net/jbj6568839z/article/details/102931466)
 * [371.两整数之和](https://blog.csdn.net/jbj6568839z/article/details/103871988)
 * [374.猜数字大小](https://blog.csdn.net/jbj6568839z/article/details/106208957)
+* [387.字符串中的第一个唯一字符](https://blog.csdn.net/jbj6568839z/article/details/106238739)
 * [389.找不同](https://blog.csdn.net/jbj6568839z/article/details/106236988)
 
 ——————401-500
@@ -133,12 +134,14 @@
 * [442.数组中重复的数据](https://blog.csdn.net/jbj6568839z/article/details/103876262)
 * [443.压缩字符串](https://blog.csdn.net/jbj6568839z/article/details/105736734)
 * [448.找到所有数组中消失的数字](https://blog.csdn.net/jbj6568839z/article/details/103876938)
+* [451.根据字符出现频率排序](https://blog.csdn.net/jbj6568839z/article/details/106240845)
 * [498.对角线遍历](https://blog.csdn.net/jbj6568839z/article/details/104036988)
 
 ——————501-600
 
 * [504.七进制数](https://blog.csdn.net/jbj6568839z/article/details/105790806)
 * [509.斐波那契数](https://blog.csdn.net/jbj6568839z/article/details/103879679)
+* [520.检测大写字母](https://blog.csdn.net/jbj6568839z/article/details/106265191)
 * [595.大的国家](https://blog.csdn.net/jbj6568839z/article/details/103954435)
 
 ——————601-700
