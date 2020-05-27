@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>387.字符串中的第一个唯一字符 · Gitbook Use</title>
+        <title>504.七进制数 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -82,10 +82,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="389.找不同.html" />
+    <link rel="next" href="509.斐波那契数.html" />
     
     
-    <link rel="prev" href="374.猜数字大小.html" />
+    <link rel="prev" href="498.对角线遍历.html" />
     
 
     <style>
@@ -1147,7 +1147,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.65" data-path="387.字符串中的第一个唯一字符.html">
+        <li class="chapter " data-level="1.4.65" data-path="387.字符串中的第一个唯一字符.html">
             
                 <a href="387.字符串中的第一个唯一字符.html">
             
@@ -1277,7 +1277,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.75" data-path="504.七进制数.html">
+        <li class="chapter active" data-level="1.4.75" data-path="504.七进制数.html">
             
                 <a href="504.七进制数.html">
             
@@ -1734,7 +1734,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >387.字符串中的第一个唯一字符</a>
+        <a href=".." >504.七进制数</a>
     </h1>
 </div>
 
@@ -1753,69 +1753,53 @@
  * @desc:
  * @Author: 余光
  * @Email: webbj97@163.com
- * @Date: 2020-05-27 17:17:57
+ * @Date: 2020-05-27 17:49:09
 -->
-<h1 align="center" id="&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x5B57;&#x7B26;">&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x5B57;&#x7B26;</h1>
+<h1 align="center" id="&#x4E03;&#x8FDB;&#x5236;&#x6570;">&#x4E03;&#x8FDB;&#x5236;&#x6570;</h1>
 
 <h2 id="&#x4E00;&#x3001;leetcode&#x9898;&#x89E3;">&#x4E00;&#x3001;LeetCode&#x9898;&#x89E3;</h2>
-<h4 id="&#x77A7;&#x4E00;&#x77A7;&#xFF08;&#x6C42;star&#xFF09;">&#x77A7;&#x4E00;&#x77A7;&#xFF08;&#x6C42;star!&#xFF09;</h4>
+<h5 id="&#x77A7;&#x4E00;&#x77A7;&#xFF5E;">&#x77A7;&#x4E00;&#x77A7;&#xFF5E;</h5>
 <ul>
-<li>LeetCode&#x9898;&#x89E3;Javascript&#x7248;&#x672C;&#xFF1A;<a href="https://webbj97.github.io/leetCode-Js/" target="_blank">Gitbook&#x7248;&#x672C;&#x4F20;&#x9001;&#x95E8;</a></li>
-<li>LeetCode&#x9898;&#x89E3;Javascript&#x7248;&#x672C;&#xFF1A;<a href="https://blog.csdn.net/jbj6568839z/article/details/103808459" target="_blank">CSDN&#x4F20;&#x9001;&#x95E8;</a></li>
+<li>&#x535A;&#x5065;&#x7684;LeetCode&#x9898;&#x89E3;&#xFF1A;<a href="https://webbj97.github.io/leetCode-Js/" target="_blank">Gitbook&#x7248;&#x672C;&#x4F20;&#x9001;&#x95E8;</a></li>
+<li>&#x535A;&#x5065;&#x7684;LeetCode&#x9898;&#x89E3;&#xFF1A;<a href="https://blog.csdn.net/jbj6568839z/article/details/103808459" target="_blank">CSDN&#x4F20;&#x9001;&#x95E8;</a></li>
 <li>&#x524D;&#x7AEF;&#x8FDB;&#x9636;&#x7B14;&#x8BB0;&#xFF1A;<a href="https://webbj97.github.io/summary/" target="_blank">Gitbook&#x4F20;&#x9001;&#x95E8;</a></li>
 </ul>
 <h2 id="&#x4E8C;&#x3001;&#x7B97;&#x6CD5;&#x9898;">&#x4E8C;&#x3001;&#x7B97;&#x6CD5;&#x9898;</h2>
 <h3 id="&#x9898;&#x76EE;">&#x9898;&#x76EE;</h3>
-<p>&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32; s &#x548C; t&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x5305;&#x542B;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x3002;</p>
-<p>&#x5B57;&#x7B26;&#x4E32; t &#x7531;&#x5B57;&#x7B26;&#x4E32; s &#x968F;&#x673A;&#x91CD;&#x6392;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x968F;&#x673A;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x3002;
-&#x8BF7;&#x627E;&#x51FA;&#x5728; t &#x4E2D;&#x88AB;&#x6DFB;&#x52A0;&#x7684;&#x5B57;&#x6BCD;&#x3002;</p>
-<p><strong>&#x793A;&#x4F8B;:</strong></p>
-<pre><code>&#x8F93;&#x5165;&#xFF1A;
-s = &quot;abcd&quot;
-t = &quot;abcde&quot;
-
-&#x8F93;&#x51FA;&#xFF1A;e
-
-&#x89E3;&#x91CA;&#xFF1A;
-&apos;e&apos; &#x662F;&#x90A3;&#x4E2A;&#x88AB;&#x6DFB;&#x52A0;&#x7684;&#x5B57;&#x6BCD;&#x3002;
-</code></pre><h2 id="&#x89E3;&#x6CD5;&#x4E00;-&#xFF08;&#x54C8;&#x5E0C;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00; &#xFF08;&#x54C8;&#x5E0C;&#xFF09;</h2>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#xFF0C;&#x5C06;&#x5176;&#x8F6C;&#x5316;&#x4E3A;7&#x8FDB;&#x5236;&#xFF0C;&#x5E76;&#x4EE5;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B; 1:</strong></p>
+<pre><code>&#x8F93;&#x5165;: 100
+&#x8F93;&#x51FA;: &quot;202&quot;
+</code></pre><p>&#x793A;&#x4F8B; 2:</p>
+<pre><code>&#x8F93;&#x5165;: -7
+&#x8F93;&#x51FA;: &quot;-10&quot;
+</code></pre><h2 id="&#x89E3;&#x6CD5;&#x4E00;-&#xFF08;&#x66B4;&#x529B;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00; &#xFF08;&#x66B4;&#x529B;&#xFF09;</h2>
 <h4 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h4>
 <ul>
-<li>key-value&#x7684;&#x904D;&#x5386;&#x5B58;&#x50A8;&#x5B57;&#x7B26;&#x4E32;&#x4E0A;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;<ul>
-<li>key&#x8BB0;&#x5F55;&#x5B57;&#x6BCD;&#xFF0C;value&#x8BB0;&#x5F55;<code>&#x4E0B;&#x6807;</code></li>
-<li>&#x5982;&#x679C;&#x7B2C;&#x4E8C;&#x6B21;&#x51FA;&#x73B0;&#xFF0C;&#x5219;value&#x6807;&#x8BB0;&#x4E3A;<code>&#x7279;&#x6B8A;&#x5B57;&#x7B26;</code></li>
-</ul>
-</li>
-<li>&#x7B2C;&#x4E8C;&#x6B21;&#x904D;&#x5386;&#x54C8;&#x5E0C;&#x8868;&#xFF0C;&#x627E;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;value<code>&#x4E0D;&#x662F;&#x7279;&#x6B8A;&#x5B57;&#x7B26;</code>&#x7684;&#x5373;&#x53EF;</li>
-</ul>
+<li>&#x5224;&#x65AD;&#x6B63;&#x8D1F;&#x3001;0</li>
+<li><p>&#x5FAA;&#x73AF;&#x53D6;&#x4F59;&#xFF08;&#x6CE8;&#x610F;&#x65E0;&#x7B26;&#x53F7;&#x53F3;&#x79FB;0&#x4F4D;&#x7684;&#x533A;&#x522B;&#xFF09;</p>
 <h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> firstUniqChar = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">s</span>) </span>{
-    <span class="hljs-keyword">var</span> obj = {}
-    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; s.length; i++){
-        <span class="hljs-keyword">if</span>(!obj[s[i]] &amp;&amp; obj[s[i]] !== <span class="hljs-number">0</span>){
-            obj[s[i]] = i
-        }<span class="hljs-keyword">else</span>{
-            obj[s[i]] = <span class="hljs-string">&apos;unone&apos;</span>
-        }
-    }
-    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> key <span class="hljs-keyword">in</span> obj){
-        <span class="hljs-keyword">if</span>(obj[key] !== <span class="hljs-string">&apos;unone&apos;</span>){
-            <span class="hljs-keyword">return</span> obj[key]
-        }
-    }
-    <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> convertToBase7 = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">num</span>) </span>{
+  <span class="hljs-keyword">if</span>(num === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;0&apos;</span>;
+  <span class="hljs-keyword">var</span> abs = <span class="hljs-literal">true</span>
+  <span class="hljs-keyword">var</span> str = <span class="hljs-string">&apos;&apos;</span>
+  <span class="hljs-keyword">if</span>(num &lt; <span class="hljs-number">0</span>){
+      abs = <span class="hljs-literal">false</span>
+      num = -num
+  }
+  <span class="hljs-keyword">while</span>(num &gt; <span class="hljs-number">0</span>){
+      str = num % <span class="hljs-number">7</span> + str
+      num = num / <span class="hljs-number">7</span> &gt;&gt; <span class="hljs-number">0</span> <span class="hljs-comment">// &#x65E0;&#x7B26;&#x53F7;&#x53F3;&#x79FB;</span>
+
+  }
+  <span class="hljs-keyword">return</span> abs ? str : <span class="hljs-string">&apos;-&apos;</span>+str
 };
 </code></pre>
 <h4 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h4>
-<p><img src="https://img-blog.csdnimg.cn/20200520164051745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<h3 id="&#x5173;&#x4E8E;&#x6211;">&#x5173;&#x4E8E;&#x6211;</h3>
-<ul>
-<li><strong>decs&#xFF1A;</strong> 19&#x5E74;&#x6BD5;&#x4E1A;&#x7684;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x4E00;&#x679A;&#xFF0C;&#x6C89;&#x8FF7;Js</li>
-<li><strong>E-mail&#xFF1A;</strong> webbj97@163.com</li>
-<li><strong>&#x4E2A;&#x4EBA;&#x535A;&#x5BA2;&#xFF1A;</strong> <a href="https://blog.csdn.net/jbj6568839z" target="_blank">CSDN</a></li>
-<li><strong>GitHub&#xFF1A;</strong> <a href="https://github.com/webbj97" target="_blank">&#x4F20;&#x9001;&#x95E8;</a></li>
+<p><img src="https://img-blog.csdnimg.cn/20200427145840442.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+</li>
 </ul>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-05-27 17:18:44 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-05-27 17:49:16 </span> </footer>
                                 
                                 </section>
                             
@@ -1842,12 +1826,12 @@ t = &quot;abcde&quot;
 
             
                 
-                <a href="374.猜数字大小.html" class="navigation navigation-prev " aria-label="Previous page: 374.猜数字大小">
+                <a href="498.对角线遍历.html" class="navigation navigation-prev " aria-label="Previous page: 498.对角线遍历">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="389.找不同.html" class="navigation navigation-next " aria-label="Next page: 389.找不同">
+                <a href="509.斐波那契数.html" class="navigation navigation-next " aria-label="Next page: 509.斐波那契数">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1858,7 +1842,7 @@ t = &quot;abcde&quot;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"387.字符串中的第一个唯一字符","level":"1.4.65","depth":2,"next":{"title":"389.找不同","level":"1.4.66","depth":2,"path":"docs/389.找不同.md","ref":"docs/389.找不同.md","articles":[]},"previous":{"title":"374.猜数字大小","level":"1.4.64","depth":2,"path":"docs/374.猜数字大小.md","ref":"docs/374.猜数字大小.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"leetCode-Js","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z","Github":"https://github.com/webbj97"}},"gitbook":"*","description":"LeetCode题解Js版"},"file":{"path":"docs/387.字符串中的第一个唯一字符.md","mtime":"2020-05-27T09:18:44.886Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-27T09:54:19.060Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"504.七进制数","level":"1.4.75","depth":2,"next":{"title":"509.斐波那契数","level":"1.4.76","depth":2,"path":"docs/509.斐波那契数.md","ref":"docs/509.斐波那契数.md","articles":[]},"previous":{"title":"498.对角线遍历","level":"1.4.74","depth":2,"path":"docs/498.对角线遍历.md","ref":"docs/498.对角线遍历.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"leetCode-Js","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z","Github":"https://github.com/webbj97"}},"gitbook":"*","description":"LeetCode题解Js版"},"file":{"path":"docs/504.七进制数.md","mtime":"2020-05-27T09:49:16.179Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-27T09:54:19.060Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
