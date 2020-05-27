@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>912.按奇偶排序数组II · Gitbook Use</title>
+        <title>703.数据流中的第K大元素 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -82,10 +82,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="922.按奇偶排序数组II.html" />
+    <link rel="next" href="704.二分查找.html" />
     
     
-    <link rel="prev" href="905.按奇偶排序数组.html" />
+    <link rel="prev" href="645.错误的集合.html" />
     
 
     <style>
@@ -1368,7 +1368,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.82" data-path="703.数据流中的第K大元素.html">
+        <li class="chapter active" data-level="1.4.82" data-path="703.数据流中的第K大元素.html">
             
                 <a href="703.数据流中的第K大元素.html">
             
@@ -1485,7 +1485,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.91" data-path="922.按奇偶排序数组II.html">
+        <li class="chapter " data-level="1.4.91" data-path="922.按奇偶排序数组II.html">
             
                 <a href="922.按奇偶排序数组II.html">
             
@@ -1498,7 +1498,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.92" data-path="922.按奇偶排序数组II.html">
+        <li class="chapter " data-level="1.4.92" data-path="922.按奇偶排序数组II.html">
             
                 <a href="922.按奇偶排序数组II.html">
             
@@ -1747,7 +1747,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >912.按奇偶排序数组II</a>
+        <a href=".." >703.数据流中的第K大元素</a>
     </h1>
 </div>
 
@@ -1762,84 +1762,98 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="../Images/title-922.jpg" width="100%"></p>
-<h1 align="center" id="&#x6309;&#x5947;&#x5076;&#x6392;&#x5E8F;&#x6570;&#x7EC4;ii">&#x6309;&#x5947;&#x5076;&#x6392;&#x5E8F;&#x6570;&#x7EC4;II</h1>
+                                <h1 align="center" id="&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x7684;&#x7B2C;k&#x5927;&#x5143;&#x7D20;">&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x7684;&#x7B2C;K&#x5927;&#x5143;&#x7D20;</h1>
 
 <h2 id="&#x4E00;&#x3001;leetcode&#x9898;&#x89E3;">&#x4E00;&#x3001;LeetCode&#x9898;&#x89E3;</h2>
 <h5 id="&#x77A7;&#x4E00;&#x77A7;&#xFF5E;">&#x77A7;&#x4E00;&#x77A7;&#xFF5E;</h5>
 <ul>
 <li>&#x535A;&#x5065;&#x7684;LeetCode&#x9898;&#x89E3;&#xFF1A;<a href="https://webbj97.github.io/leetCode-Js/" target="_blank">Gitbook&#x7248;&#x672C;&#x4F20;&#x9001;&#x95E8;</a></li>
 <li>&#x535A;&#x5065;&#x7684;LeetCode&#x9898;&#x89E3;&#xFF1A;<a href="https://blog.csdn.net/jbj6568839z/article/details/103808459" target="_blank">CSDN&#x4F20;&#x9001;&#x95E8;</a></li>
-<li>&#x6709;&#x8DA3;&#x7684;CSS&#xFF1A;<a href="https://webbj97.github.io/Interesting-CSS/" target="_blank">Gitbook&#x4F20;&#x9001;&#x95E8;</a></li>
 <li>&#x524D;&#x7AEF;&#x8FDB;&#x9636;&#x7B14;&#x8BB0;&#xFF1A;<a href="https://webbj97.github.io/summary/" target="_blank">Gitbook&#x4F20;&#x9001;&#x95E8;</a></li>
-</ul>
-<h5 id="&#x505A;&#x9898;&#x8DEF;&#x7EBF;&#xFF08;--&#x5F53;&#x524D;&#x9636;&#x6BB5;&#xFF09;">&#x505A;&#x9898;&#x8DEF;&#x7EBF;&#xFF08; ** =&#x5F53;&#x524D;&#x9636;&#x6BB5;&#xFF09;</h5>
-<ul>
-<li>&#x9636;&#x6BB5;&#x4E00;&#xFF08;&#x89E3;&#x9898;&#x603B;&#x6570;&#xFF0C;&#x5355;&#x9898;&#x9898;&#x89E3;&#x6570;&#x81F3;&#x4E0A;&#xFF09;**</li>
-<li>&#x9636;&#x6BB5;&#x4E8C;&#xFF08;&#x89E3;&#x9898;&#x8D28;&#x91CF;&#x81F3;&#x4E0A;&#xFF09;</li>
-<li>&#x9636;&#x6BB5;&#x4E09;&#xFF08;&#x7B97;&#x6CD5;&#x601D;&#x60F3;&#x81F3;&#x4E0A;&#xFF09;</li>
 </ul>
 <h2 id="&#x4E8C;&#x3001;&#x7B97;&#x6CD5;&#x9898;">&#x4E8C;&#x3001;&#x7B97;&#x6CD5;&#x9898;</h2>
 <h3 id="&#x9898;&#x76EE;">&#x9898;&#x76EE;</h3>
-<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x6570;&#x7EC4; A&#xFF0C; A &#x4E2D;&#x4E00;&#x534A;&#x6574;&#x6570;&#x662F;&#x5947;&#x6570;&#xFF0C;&#x4E00;&#x534A;&#x6574;&#x6570;&#x662F;&#x5076;&#x6570;&#x3002;</p>
-<p>&#x5BF9;&#x6570;&#x7EC4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x4EE5;&#x4FBF;&#x5F53; <code>A[i]</code> &#x4E3A;&#x5947;&#x6570;&#x65F6;&#xFF0C;<code>i</code> &#x4E5F;&#x662F;&#x5947;&#x6570;&#xFF1B;&#x5F53; <code>A[i]</code> &#x4E3A;&#x5076;&#x6570;&#x65F6;&#xFF0C;<code>i</code> &#x4E5F;&#x662F;&#x5076;&#x6570;&#x3002;</p>
-<p>&#x1F4CC;&#x4F60;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;&#x6EE1;&#x8DB3;&#x6B64;&#x6761;&#x4EF6;&#x7684;&#x4EFB;&#x4F55;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x7B54;&#x6848;&#x3002;</p>
-<p><strong>&#x793A;&#x4F8B;&#xFF1A;</strong></p>
-<pre><code>&#x8F93;&#x5165;&#xFF1A;[4,2,5,7]
-&#x8F93;&#x51FA;&#xFF1A;[4,5,2,7]
-&#x89E3;&#x91CA;&#xFF1A;[4,7,2,5]&#xFF0C;[2,5,4,7]&#xFF0C;[2,7,4,5] &#x4E5F;&#x4F1A;&#x88AB;&#x63A5;&#x53D7;&#x3002;
-</code></pre><p><strong>&#x63D0;&#x793A;&#xFF1A;</strong></p>
-<p>&#x1F4A1;1 &lt;= A.length &lt;= 5000
-&#x1F4A1;0 &lt;= A[i] &lt;= 5000</p>
-<h2 id="&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x4E24;&#x6B21;&#x626B;&#x63CF;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x4E24;&#x6B21;&#x626B;&#x63CF;&#xFF09;</h2>
+<p>&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x627E;&#x5230;&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x7B2C;K&#x5927;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#xFF08;class&#xFF09;&#x3002;&#x6CE8;&#x610F;&#x662F;&#x6392;&#x5E8F;&#x540E;&#x7684;&#x7B2C;K&#x5927;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x662F;&#x7B2C;K&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x4F60;&#x7684; KthLargest &#x7C7B;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x540C;&#x65F6;&#x63A5;&#x6536;&#x6574;&#x6570; k &#x548C;&#x6574;&#x6570;&#x6570;&#x7EC4;nums &#x7684;&#x6784;&#x9020;&#x5668;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x7684;&#x521D;&#x59CB;&#x5143;&#x7D20;&#x3002;&#x6BCF;&#x6B21;&#x8C03;&#x7528; KthLargest.add&#xFF0C;&#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6570;&#x636E;&#x6D41;&#x4E2D;&#x7B2C;K&#x5927;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B;:</strong></p>
+<pre><code>int k = 3;
+int[] arr = [4,5,8,2];
+KthLargest kthLargest = new KthLargest(3, arr);
+kthLargest.add(3);   // returns 4
+kthLargest.add(5);   // returns 5
+kthLargest.add(10);  // returns 5
+kthLargest.add(9);   // returns 8
+kthLargest.add(4);   // returns 8
+</code></pre><h2 id="&#x89E3;&#x6CD5;&#x4E00;-&#xFF08;&#x66B4;&#x529B;&#x6BD4;&#x8F83;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00; &#xFF08;&#x66B4;&#x529B;&#x6BD4;&#x8F83;&#xFF09;</h2>
+<h4 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h4>
 <ul>
-<li>&#x521B;&#x5EFA;<code>&#x65B0;&#x6570;&#x7EC4;</code>&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x7ED3;&#x679C;&#xFF0C;&#x58F0;&#x660E;&#x4E00;&#x4E2A;<code>&#x53D8;&#x91CF;</code>&#x8BB0;&#x5F55;&#x4E0B;&#x6807;</li>
-<li>&#x1F4A1;&#x7B2C;&#x4E00;&#x6B21;&#x626B;&#x63CF;&#x5076;&#x6570;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x5076;&#x6570;&#x4E0B;&#x6807;&#x4F4D;&#x7F6E;</li>
-<li>&#x1F4A1;&#x7B2C;&#x4E8C;&#x6B21;&#x626B;&#x63CF;&#x57FA;&#x6570;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;&#x5947;&#x6570;&#x4E0B;&#x6807;&#x4F4D;&#x7F6E;</li>
-<li>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;O(N)&#x2014;&#x2014;&#x904D;&#x5386;&#x4E86;2&#x6B21;&#x6570;&#x7EC4;</li>
-<li>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;O(N)&#x2014;&#x2014;&#x4E00;&#x4E2A;&#x65B0;&#x6570;&#x7EC4;</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> sortArrayByParityII = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">A</span>) </span>{
-    <span class="hljs-keyword">var</span> index = <span class="hljs-number">0</span>
-    <span class="hljs-keyword">var</span> res = []
-    A.forEach(item =&gt; {
-        <span class="hljs-keyword">if</span>(item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>){
-            res[index] = item
-            index+=<span class="hljs-number">2</span>
-        }
-    });
-    index = <span class="hljs-number">1</span>;<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x5947;&#x6570;&#x4E0B;&#x6807;</span>
-    A.forEach(item =&gt; {
-        <span class="hljs-keyword">if</span>(item % <span class="hljs-number">2</span> !== <span class="hljs-number">0</span>){
-            res[index] = item
-            index+=<span class="hljs-number">2</span>
-        }
-    });
-    <span class="hljs-keyword">return</span> res;
+<li><p>&#x601D;&#x8DEF;&#x5F85;&#x603B;&#x7ED3;</p>
+<h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> KthLargest = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">k, nums</span>) </span>{
+  <span class="hljs-keyword">this</span>.data = nums
+  <span class="hljs-keyword">this</span>.k = k
+  <span class="hljs-keyword">let</span> len = <span class="hljs-keyword">this</span>.data.length
+  <span class="hljs-keyword">let</span> parent = <span class="hljs-built_in">Math</span>.floor((len - <span class="hljs-number">2</span>) / <span class="hljs-number">2</span>)
+  <span class="hljs-keyword">this</span>.shiftDown = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">k</span>) </span>{
+      <span class="hljs-keyword">while</span> (k * <span class="hljs-number">2</span> + <span class="hljs-number">1</span> &lt; <span class="hljs-keyword">this</span>.data.length) {
+          <span class="hljs-keyword">let</span> j = k * <span class="hljs-number">2</span> + <span class="hljs-number">1</span>
+          <span class="hljs-keyword">if</span> (k * <span class="hljs-number">2</span> + <span class="hljs-number">2</span> &lt; <span class="hljs-keyword">this</span>.data.length &amp;&amp; <span class="hljs-keyword">this</span>.data[j] &gt; <span class="hljs-keyword">this</span>.data[j + <span class="hljs-number">1</span>]) {
+              j += <span class="hljs-number">1</span>
+          }
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.data[k] &gt; <span class="hljs-keyword">this</span>.data[j]) {
+              <span class="hljs-keyword">let</span> m = <span class="hljs-keyword">this</span>.data[k]
+              <span class="hljs-keyword">this</span>.data[k] = <span class="hljs-keyword">this</span>.data[j]
+              <span class="hljs-keyword">this</span>.data[j] = m
+              k = j
+          } <span class="hljs-keyword">else</span> {
+              <span class="hljs-keyword">break</span>
+          }
+      }
+  }
+  <span class="hljs-keyword">this</span>.shiftUp = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">k</span>) </span>{
+      <span class="hljs-keyword">while</span> (k &gt; <span class="hljs-number">0</span>) {
+          <span class="hljs-keyword">let</span> parent = <span class="hljs-built_in">Math</span>.floor((k - <span class="hljs-number">1</span>) / <span class="hljs-number">2</span>)
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.data[parent] &gt; <span class="hljs-keyword">this</span>.data[k]) {
+              <span class="hljs-keyword">let</span> m = <span class="hljs-keyword">this</span>.data[k]
+              <span class="hljs-keyword">this</span>.data[k] = <span class="hljs-keyword">this</span>.data[parent]
+              <span class="hljs-keyword">this</span>.data[parent] = m
+              k = parent
+          } <span class="hljs-keyword">else</span> {
+              <span class="hljs-keyword">break</span>
+          }
+      }
+  }
+  <span class="hljs-keyword">this</span>.extracMin = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.data[<span class="hljs-number">0</span>] = <span class="hljs-keyword">this</span>.data[<span class="hljs-keyword">this</span>.data.length - <span class="hljs-number">1</span>]
+      <span class="hljs-keyword">this</span>.data.pop()
+      <span class="hljs-keyword">this</span>.shiftDown(<span class="hljs-number">0</span>)
+  }
+  <span class="hljs-keyword">for</span> (parent; parent &gt;= <span class="hljs-number">0</span>; parent--) {
+      <span class="hljs-keyword">this</span>.shiftDown(parent)
+  }
+  <span class="hljs-keyword">while</span> (<span class="hljs-keyword">this</span>.data.length &gt; k) {
+      <span class="hljs-keyword">this</span>.extracMin()
+  }
+};
+KthLargest.prototype.add = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val</span>) </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.data.length &lt; <span class="hljs-keyword">this</span>.k) {
+      <span class="hljs-keyword">this</span>.data.push(val)
+      <span class="hljs-keyword">this</span>.shiftUp(<span class="hljs-keyword">this</span>.data.length - <span class="hljs-number">1</span>)
+  } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">if</span> (val &gt; <span class="hljs-keyword">this</span>.data[<span class="hljs-number">0</span>]) {
+          <span class="hljs-keyword">this</span>.data[<span class="hljs-number">0</span>] = val
+          <span class="hljs-keyword">this</span>.shiftDown(<span class="hljs-number">0</span>)
+      }
+
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.data[<span class="hljs-number">0</span>]
 };
 </code></pre>
-<p><img src="https://img-blog.csdnimg.cn/2020011510350752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<h2 id="&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x4E00;&#x904D;&#x626B;&#x63CF;&#xFF09;">&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x4E00;&#x904D;&#x626B;&#x63CF;&#xFF09;</h2>
-<ul>
-<li>&#x521B;&#x5EFA;<code>&#x65B0;&#x6570;&#x7EC4;</code>&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x7ED3;&#x679C;&#xFF0C;&#x58F0;&#x660E;<code>2</code>&#x4E2A;<code>&#x53D8;&#x91CF;</code>&#x8BB0;&#x5F55;&#x4E0B;&#x6807;</li>
-<li>&#x626B;&#x63CF;&#x4E00;&#x6B21;</li>
-<li>&#x1F6A8;&#x4E0B;&#x6807;&#x95F4;&#x9694;&#x4E3A;<code>2</code></li>
+<h4 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h4>
+<p><img src="https://img-blog.csdnimg.cn/20200426104252166.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> sortArrayByParity = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">A</span>) </span>{
-    <span class="hljs-keyword">var</span> left = <span class="hljs-number">0</span>,right = A.length<span class="hljs-number">-1</span>;
-    <span class="hljs-keyword">var</span> res = []
-    A.forEach(item =&gt; {
-        <span class="hljs-keyword">if</span>(item % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>){
-            res[left++] = item
-        }<span class="hljs-keyword">else</span>{
-            res[right--] = item
-        }
-    });
-    <span class="hljs-keyword">return</span> res;
-};
-</code></pre>
-<p><img src="https://img-blog.csdnimg.cn/20200115103724611.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-04-22 14:55:14 </span> </footer>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-05-27 17:57:51 </span> </footer>
                                 
                                 </section>
                             
@@ -1866,12 +1880,12 @@
 
             
                 
-                <a href="905.按奇偶排序数组.html" class="navigation navigation-prev " aria-label="Previous page: 905.按奇偶排序数组">
+                <a href="645.错误的集合.html" class="navigation navigation-prev " aria-label="Previous page: 645.错误的集合">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="922.按奇偶排序数组II.html" class="navigation navigation-next " aria-label="Next page: 922.按奇偶排序数组II">
+                <a href="704.二分查找.html" class="navigation navigation-next " aria-label="Next page: 704.二分查找">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1882,7 +1896,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"912.按奇偶排序数组II","level":"1.4.91","depth":2,"next":{"title":"922.按奇偶排序数组II","level":"1.4.92","depth":2,"path":"docs/922.按奇偶排序数组II.md","ref":"docs/922.按奇偶排序数组II.md","articles":[]},"previous":{"title":"905.按奇偶排序数组","level":"1.4.90","depth":2,"path":"docs/905.按奇偶排序数组.md","ref":"docs/905.按奇偶排序数组.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"leetCode-Js","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z","Github":"https://github.com/webbj97"}},"gitbook":"*","description":"LeetCode题解Js版"},"file":{"path":"docs/922.按奇偶排序数组II.md","mtime":"2020-04-22T06:55:14.131Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-27T09:58:03.563Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"703.数据流中的第K大元素","level":"1.4.82","depth":2,"next":{"title":"704.二分查找","level":"1.4.83","depth":2,"path":"docs/704.二分查找.md","ref":"docs/704.二分查找.md","articles":[]},"previous":{"title":"645.错误的集合","level":"1.4.81","depth":2,"path":"docs/645.错误的集合.md","ref":"docs/645.错误的集合.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"leetCode-Js","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z","Github":"https://github.com/webbj97"}},"gitbook":"*","description":"LeetCode题解Js版"},"file":{"path":"docs/703.数据流中的第K大元素.md","mtime":"2020-05-27T09:57:51.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-27T09:58:03.563Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
