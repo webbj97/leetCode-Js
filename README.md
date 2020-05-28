@@ -64,7 +64,7 @@
 * [14.最长公共前缀](https://blog.csdn.net/jbj6568839z/article/details/100582057)
 * [15.三数之和](https://blog.csdn.net/jbj6568839z/article/details/103719973)
 * [16.最接近的三数之和](https://blog.csdn.net/jbj6568839z/article/details/103719589)
-* [19.删除链表的倒数第N个节点])(https://blog.csdn.net/jbj6568839z/article/details/106385853)
+* [19.删除链表的倒数第N个节点](https://blog.csdn.net/jbj6568839z/article/details/106385853)
 * [20.有效的括号](https://blog.csdn.net/jbj6568839z/article/details/100701285)
 * [21.合并两个有序链表](https://blog.csdn.net/jbj6568839z/article/details/103719701)
 * [24.两两交换链表中的节点](https://blog.csdn.net/jbj6568839z/article/details/102668160)
