@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>349.两个数组的交集 · Gitbook Use</title>
+        <title>876.链表的中间结点 · Gitbook Use</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -82,10 +82,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="350.两个数组的交集II.html" />
     
-    
-    <link rel="prev" href="344.反转字符串.html" />
+    <link rel="prev" href="860.柠檬水找零.html" />
     
 
     <style>
@@ -1095,7 +1093,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.61" data-path="349.两个数组的交集.html">
+        <li class="chapter " data-level="1.4.61" data-path="349.两个数组的交集.html">
             
                 <a href="349.两个数组的交集.html">
             
@@ -1472,7 +1470,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.90" data-path="876.链表的中间结点.html">
+        <li class="chapter active" data-level="1.4.90" data-path="876.链表的中间结点.html">
             
                 <a href="876.链表的中间结点.html">
             
@@ -1773,7 +1771,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >349.两个数组的交集</a>
+        <a href=".." >876.链表的中间结点</a>
     </h1>
 </div>
 
@@ -1788,36 +1786,98 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p><img src="../Images/title-349.jpg" width="100%"></p>
-<h1 align="center" id="&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x4EA4;&#x96C6;">&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x4EA4;&#x96C6;</h1>
+                                <h1 align="center" id="&#x94FE;&#x8868;&#x7684;&#x4E2D;&#x95F4;&#x8282;&#x70B9;">&#x94FE;&#x8868;&#x7684;&#x4E2D;&#x95F4;&#x8282;&#x70B9;</h1>
 
-<p>&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x7684;&#x4EA4;&#x96C6;&#x3002;</p>
+<h2 id="&#x4E00;&#x3001;leetcode&#x9898;&#x89E3;">&#x4E00;&#x3001;LeetCode&#x9898;&#x89E3;</h2>
+<h5 id="&#x77A7;&#x4E00;&#x77A7;&#xFF5E;">&#x77A7;&#x4E00;&#x77A7;&#xFF5E;</h5>
 <ul>
-<li><p>&#x8F93;&#x5165;: <code>nums1 = [1,2,2,1], nums2 = [2,2]</code>   -&gt; &#x8F93;&#x51FA;: <code>[2]</code></p>
-</li>
-<li><p>&#x8F93;&#x5165;: <code>nums1 = [4,9,5], nums2 = [9,4,9,8,4]</code> -&gt; &#x8F93;&#x51FA;: <code>[9,4]</code></p>
-</li>
+<li>&#x535A;&#x5065;&#x7684;LeetCode&#x9898;&#x89E3;&#xFF1A;<a href="https://webbj97.github.io/leetCode-Js/" target="_blank">Gitbook&#x7248;&#x672C;&#x4F20;&#x9001;&#x95E8;</a></li>
+<li>&#x535A;&#x5065;&#x7684;LeetCode&#x9898;&#x89E3;&#xFF1A;<a href="https://blog.csdn.net/jbj6568839z/article/details/103808459" target="_blank">CSDN&#x4F20;&#x9001;&#x95E8;</a></li>
+<li>&#x6709;&#x8DA3;&#x7684;CSS&#xFF1A;<a href="https://webbj97.github.io/Interesting-CSS/" target="_blank">Gitbook&#x4F20;&#x9001;&#x95E8;</a></li>
+<li>&#x524D;&#x7AEF;&#x8FDB;&#x9636;&#x7B14;&#x8BB0;&#xFF1A;<a href="https://webbj97.github.io/summary/" target="_blank">Gitbook&#x4F20;&#x9001;&#x95E8;</a></li>
 </ul>
-<p>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4E00;&#x5B9A;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;
-&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4E0D;&#x8003;&#x8651;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x7684;&#x987A;&#x5E8F;&#x3002;</p>
-<h3 id="&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x5FAA;&#x73AF;&#x6BD4;&#x5BF9;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00;&#xFF08;&#x5FAA;&#x73AF;&#x6BD4;&#x5BF9;&#xFF09;</h3>
-<p><img src="https://img-blog.csdnimg.cn/20191105100755948.jpg" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;">
-&#x65E2;&#x7136;&#x662F;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x6BD4;&#x8F83;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x786E;&#x5B9A;&#x6BD4;&#x8F83;&#x7684;&#x8FB9;&#x754C;&#x3002;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x4EA4;&#x96C6;&#x6700;&#x7406;&#x60F3;&#x7684;&#x7ED3;&#x679C;&#x662F;&#xFF1A;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;<code>&#x957F;&#x5EA6;&#x77ED;&#x7684;&#x6570;&#x7EC4;</code>&#x5185;&#x7684;&#x5168;&#x90E8;&#x5143;&#x7D20;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">var</span> intersection = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums1, nums2</span>) </span>{
-    <span class="hljs-keyword">var</span> arrShort = nums1.length &gt; nums2.length ? nums2 : nums1 <span class="hljs-comment">//&#x786E;&#x5B9A;&#x957F;&#x5EA6;&#x77ED;&#x7684;&#x5143;&#x7D20;</span>
-    <span class="hljs-keyword">var</span> arrLong = nums1.length &gt; nums2.length ? nums1 : nums2 <span class="hljs-comment">//&#x786E;&#x5B9A;&#x5269;&#x4E0B;&#x7684;&#x6570;&#x7EC4;</span>
-    <span class="hljs-keyword">var</span> res = []
-    arrShort.forEach(item =&gt; {
-        <span class="hljs-keyword">if</span>(arrLong.indexOf(item) &gt;= <span class="hljs-number">0</span>){
-            <span class="hljs-keyword">if</span>(res.indexOf(item) == <span class="hljs-number">-1</span>){
-                res.push(item )
-            }
-        }
-    });
-    <span class="hljs-keyword">return</span> res
+<h2 id="&#x4E8C;&#x3001;&#x7B97;&#x6CD5;&#x9898;">&#x4E8C;&#x3001;&#x7B97;&#x6CD5;&#x9898;</h2>
+<h3 id="&#x9898;&#x76EE;">&#x9898;&#x76EE;</h3>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5E26;&#x6709;&#x5934;&#x7ED3;&#x70B9; head &#x7684;&#x975E;&#x7A7A;&#x5355;&#x94FE;&#x8868;&#xFF0C;&#x8FD4;&#x56DE;&#x94FE;&#x8868;&#x7684;&#x4E2D;&#x95F4;&#x7ED3;&#x70B9;&#x3002;
+&#x5982;&#x679C;&#x6709;&#x4E24;&#x4E2A;&#x4E2D;&#x95F4;&#x7ED3;&#x70B9;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7B2C;&#x4E8C;&#x4E2A;&#x4E2D;&#x95F4;&#x7ED3;&#x70B9;&#x3002;</p>
+<p><strong>&#x793A;&#x4F8B; 1&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;[1,2,3,4,5]
+&#x8F93;&#x51FA;&#xFF1A;&#x6B64;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7ED3;&#x70B9; 3 (&#x5E8F;&#x5217;&#x5316;&#x5F62;&#x5F0F;&#xFF1A;[3,4,5])
+&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x70B9;&#x503C;&#x4E3A; 3 &#x3002; (&#x6D4B;&#x8BC4;&#x7CFB;&#x7EDF;&#x5BF9;&#x8BE5;&#x7ED3;&#x70B9;&#x5E8F;&#x5217;&#x5316;&#x8868;&#x8FF0;&#x662F; [3,4,5])&#x3002;
+&#x6CE8;&#x610F;&#xFF0C;&#x6211;&#x4EEC;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A; ListNode &#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61; ans&#xFF0C;&#x8FD9;&#x6837;&#xFF1A;
+ans.val = 3, ans.next.val = 4, ans.next.next.val = 5,
+&#x4EE5;&#x53CA; ans.next.next.next = NULL.
+</code></pre><p><strong>&#x793A;&#x4F8B; 2&#xFF1A;</strong></p>
+<pre><code>&#x8F93;&#x5165;&#xFF1A;[1,2,3,4,5,6]
+&#x8F93;&#x51FA;&#xFF1A;&#x6B64;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x7ED3;&#x70B9; 4 (&#x5E8F;&#x5217;&#x5316;&#x5F62;&#x5F0F;&#xFF1A;[4,5,6])
+&#x7531;&#x4E8E;&#x8BE5;&#x5217;&#x8868;&#x6709;&#x4E24;&#x4E2A;&#x4E2D;&#x95F4;&#x7ED3;&#x70B9;&#xFF0C;&#x503C;&#x5206;&#x522B;&#x4E3A; 3 &#x548C; 4&#xFF0C;&#x6211;&#x4EEC;&#x8FD4;&#x56DE;&#x7B2C;&#x4E8C;&#x4E2A;&#x7ED3;&#x70B9;&#x3002;
+</code></pre><h2 id="&#x89E3;&#x6CD5;&#x4E00;-&#xFF08;&#x6570;&#x7EC4;&#xFF09;">&#x89E3;&#x6CD5;&#x4E00; &#xFF08;&#x6570;&#x7EC4;&#xFF09;</h2>
+<h4 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h4>
+<ul>
+<li>&#x94FE;&#x8868;&#x662F;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x67E5;&#x8BE2;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x501F;&#x52A9;&#x4E00;&#x4E2A;&#x8F85;&#x52A9;&#x6570;&#x7EC4;&#x6765;&#x4FDD;&#x5B58;&#x94FE;&#x8868;&#x5185;&#x7684;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(N)&#xFF0C;&#x5176;&#x4E2D;&#x904D;&#x5386;&#x6574;&#x4E2A;&#x94FE;&#x8868;&#x3002;</li>
+<li>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(N)&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x6570;&#x636E;&#x7684;&#x6570;&#x7EC4;&#x3002;<h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> middleNode = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">head</span>) </span>{
+  <span class="hljs-keyword">var</span> node = head, arr = [],len = <span class="hljs-number">0</span>
+  <span class="hljs-keyword">while</span>(node){
+      arr[len++] = node
+      node = node.next
+  }
+  <span class="hljs-keyword">return</span> arr[arr.length &gt;&gt; <span class="hljs-number">1</span>] <span class="hljs-comment">//&#x5411;&#x53F3;&#x79FB;1&#x4F4D; = /2&amp;&amp;&#x5411;&#x4E0A;&#x53D6;&#x6574;</span>
 };
 </code></pre>
-<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-01-15 11:34:18 </span> </footer>
+<h4 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h4>
+<img src="https://img-blog.csdnimg.cn/20200323102118533.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"><h2 id="&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x5355;&#x6307;&#x9488;&#xFF09;">&#x89E3;&#x6CD5;&#x4E8C;&#xFF08;&#x5355;&#x6307;&#x9488;&#xFF09;</h2>
+<h4 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h4>
+</li>
+<li>&#x89E3;&#x6CD5;&#x4E00;&#x662F;&#x5229;&#x7528;&#x6570;&#x7EC4;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E00;&#x6B21;&#x6211;&#x4EEC;&#x5229;&#x7528;&#x6307;&#x9488;&#x7EDF;&#x8BA1;&#x94FE;&#x8868;&#x7684;&#x4E2A;&#x6570;</li>
+<li>&#x7B2C;&#x4E00;&#x6B21;&#x7EDF;&#x8BA1;&#x4E2A;&#x6570;</li>
+<li>&#x7B2C;&#x4E8C;&#x6B21;&#x8FD4;&#x56DE;&#x6240;&#x9700;&#x8282;&#x70B9;</li>
+<li>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(N) &#xFF0C;&#x904D;&#x5386;&#x6574;&#x4E2A;&#x6570;&#x7EC4;2&#x6B21;</li>
+<li>&#x7A7A;&#x95F4;&#x8D1F;&#x8D23;&#x5EA6;&#xFF1A;O(1)</li>
+</ul>
+<h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> middleNode = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">head</span>) </span>{
+    <span class="hljs-keyword">var</span> len = <span class="hljs-number">0</span>, cur = head
+    <span class="hljs-keyword">while</span>(cur){
+        len++
+        cur = cur.next
+    }
+    <span class="hljs-keyword">var</span> mid = len &gt;&gt; <span class="hljs-number">1</span>
+    <span class="hljs-keyword">var</span> k = <span class="hljs-number">0</span>
+    cur = head
+    <span class="hljs-keyword">while</span>(k &lt; mid){
+        k++
+        cur = cur.next
+    }
+    <span class="hljs-keyword">return</span> cur
+};
+</code></pre>
+<h4 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h4>
+<p><img src="https://img-blog.csdnimg.cn/202003231041371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<h2 id="&#x89E3;&#x6CD5;&#x4E09;&#xFF08;&#x5FEB;&#x6162;&#x6307;&#x9488;&#xFF09;&#x2705;">&#x89E3;&#x6CD5;&#x4E09;&#xFF08;&#x5FEB;&#x6162;&#x6307;&#x9488;&#xFF09;&#x2705;</h2>
+<h4 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h4>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F18;&#x5316;&#x4E00;&#x4E0B;&#x89E3;&#x6CD5;&#x4E8C;</p>
+<ul>
+<li>&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x6162;&#x6307;&#x9488;<code>1&#x6B21;&#x8D70;1&#x6B65;</code></li>
+<li>&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5FEB;&#x6307;&#x9488;<code>1&#x6B21;&#x8D70;2&#x6B65;</code></li>
+<li>&#x5F53;&#x5FEB;&#x6307;&#x9488;&#x8D70;&#x5230;&#x7EC8;&#x70B9;&#x65F6;&#xFF0C;&#x6162;&#x6307;&#x9488;&#x4E00;&#x5B9A;&#x8D70;&#x5230;&#x4E00;&#x534A;&#x5904;&#x3002;</li>
+<li>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(N)&#xFF0C;&#x5176;&#x4E2D; N&#x662F;&#x7ED9;&#x5B9A;&#x94FE;&#x8868;&#x7684;&#x7ED3;&#x70B9;&#x6570;&#x76EE;&#x3002;</li>
+<li>&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;O(1)&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5E38;&#x6570;&#x7A7A;&#x95F4;&#x5B58;&#x653E; slow &#x548C; fast &#x4E24;&#x4E2A;&#x6307;&#x9488;&#x3002;</li>
+</ul>
+<h4 id="&#x4EE3;&#x7801;">&#x4EE3;&#x7801;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> middleNode = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">head</span>) </span>{
+    <span class="hljs-keyword">var</span> slow = head, fast = head;
+    <span class="hljs-keyword">while</span>(fast &amp;&amp; fast.next){
+        slow = slow.next
+        fast = fast.next.next
+    }
+    <span class="hljs-keyword">return</span> slow
+};
+</code></pre>
+<h4 id="&#x7ED3;&#x679C;">&#x7ED3;&#x679C;</h4>
+<p><img src="https://img-blog.csdnimg.cn/20200323105430439.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2piajY1Njg4Mzl6,size_16,color_FFFFFF,t_70" alt="&#x5728;&#x8FD9;&#x91CC;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x63CF;&#x8FF0;"></p>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> &#xA9; All Rights Reserved </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> updated 2020-05-29 10:20:22 </span> </footer>
                                 
                                 </section>
                             
@@ -1844,14 +1904,10 @@
 
             
                 
-                <a href="344.反转字符串.html" class="navigation navigation-prev " aria-label="Previous page: 344.反转字符串">
+                <a href="860.柠檬水找零.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 860.柠檬水找零">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="350.两个数组的交集II.html" class="navigation navigation-next " aria-label="Next page: 350.两个数组的交集II">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1860,7 +1916,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"349.两个数组的交集","level":"1.4.61","depth":2,"next":{"title":"350.两个数组的交集II","level":"1.4.62","depth":2,"path":"docs/350.两个数组的交集II.md","ref":"docs/350.两个数组的交集II.md","articles":[]},"previous":{"title":"344.反转字符串","level":"1.4.60","depth":2,"path":"docs/344.反转字符串.md","ref":"docs/344.反转字符串.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"leetCode-Js","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z","Github":"https://github.com/webbj97"}},"gitbook":"*","description":"LeetCode题解Js版"},"file":{"path":"docs/349.两个数组的交集.md","mtime":"2020-01-15T03:34:18.134Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-29T02:22:45.725Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"876.链表的中间结点","level":"1.4.90","depth":2,"next":{"title":"896.单调数列","level":"1.4.91","depth":2,"url":"https://blog.csdn.net/jbj6568839z/article/details/105768637","ref":"https://blog.csdn.net/jbj6568839z/article/details/105768637","articles":[]},"previous":{"title":"860.柠檬水找零","level":"1.4.89","depth":2,"path":"docs/860.柠檬水找零.md","ref":"docs/860.柠檬水找零.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","page-footer-ex","code","emphasize","github","github-buttons","sectionx"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"emphasize":{},"github":{"url":"https://github.com/webbj97"},"page-footer-ex":{"copyright":"© All Rights Reserved","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"updated"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"github-buttons":{"buttons":[{"user":"webbj97","repo":"leetCode-Js","type":"star","size":"large"},{"user":"webbj97","type":"follow","width":"230","count":false}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"姜博健","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Use","links":{"sidebar":{"CSDN":"https://blog.csdn.net/jbj6568839z","Github":"https://github.com/webbj97"}},"gitbook":"*","description":"LeetCode题解Js版"},"file":{"path":"docs/876.链表的中间结点.md","mtime":"2020-05-29T02:20:22.987Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-29T02:22:45.725Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

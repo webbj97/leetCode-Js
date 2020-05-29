@@ -118,8 +118,8 @@
     801-900
     * [836.矩形重叠](docs/836.矩形重叠.md)
     * [860.柠檬水找零](docs/860.柠檬水找零.md)
-    * [876.链表的中间结点](https://blog.csdn.net/jbj6568839z/article/details/105042706)
-    * [892.三维形体的表面积](https://blog.csdn.net/jbj6568839z/article/details/105093755)
+    * [876.链表的中间结点](docs/876.链表的中间结点.md)
+    <!-- * [892.三维形体的表面积](https://blog.csdn.net/jbj6568839z/article/details/105093755) -->
     * [896.单调数列](https://blog.csdn.net/jbj6568839z/article/details/105768637)
     900-1000
     * [905.按奇偶排序数组](docs/905.按奇偶排序数组.md)
