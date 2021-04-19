@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+test
+Ts
+docs
+Images
+money
+dist
+deploy
+prepared
