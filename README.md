@@ -1,4 +1,4 @@
-<h1 align="center">LeetCode题解Js版</h1>
+<h1 align="center">LeetCode题解</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/language-javaScript-brightgreen"/>
@@ -8,48 +8,38 @@
     <a href="https://github.com/webbj97" target="_blank">
         <img src="https://img.shields.io/badge/github-star-critical"/>
     </a>
-    <a href="https://www.gitbook.com/" target="_blank">
-        <img src="https://img.shields.io/badge/-gitbook-ff69b4"/>
-    </a>
 </p>
 <p align="center">
-    <a href="https://webbj97.github.io/leetCode-Js/">在线查看地址</a>
+    <a href="https://webbj97.github.io/leetCode-Js/">https://webbj97.github.io/leetCode-Js/</a>
 </p>
 
+## 相关仓库
 
-### 题外话
-
-* LeetCode题解：[传送门](https://webbj97.github.io/leetCode-Js/)
 * 前端笔记：[传送门](https://webbj97.github.io/summary/)
 
-### 项目背景
+## 项目背景
 
+::: tip
 旨在提高自己对算法的理解，将题解总结成文章，有利于未来自查，也希望能对大家有所帮助。
-如果该项目能对大家起到积极的作用，就算成功了，欢迎大家留言交流，接受批评和指正～
-通过**传送门**可以跳转至LeetCode题解的gitbook版本，方便大家快速浏览
+:::
 
-本仓库暂时分为三个部分
-* 第一个是按照题库顺序以及自己刷题的先后排列的LeetCode题解
-* 第二个是每日一题相关的LeeTCode题解（带完善）
-* 第三个以专题类型为区分的题解（待完善）
+* 🔥LeetCode Hot 100题
+  * 精选 100 道力扣（LeetCode）上最热门的题目，适合初识算法与数据结构的新手和想要在短时间内高效提升的人，熟练掌握这 100 道题，你就已经具备了在代码世界通行的基本能力。
+  * 进度 10 / 100
+* 💛剑指 Offer (第2版)
+  * 《剑指 Offer（第 2 版）》通行全球的程序员经典面试秘籍。剖析典型的编程面试题，系统整理基础知识、代码质量、解题思路、优化效率和综合能力这 5 个面试要点。
+  * 进度 20 / 75
 
+## 关于我
 
-**记录：**
-
-* 2020.04.22 — leetcode题解达到100
-
-### 关于我
-
-* **decs：** 19年毕业的前端开发一枚，沉迷Js
+* **decs：** 前端开发一枚，希望走的更远
 * **E-mail：** webbj97@163.com
 * **个人博客：** [CSDN](https://blog.csdn.net/jbj6568839z)
 * **GitHub：** [传送门](https://github.com/webbj97)
 
-### LeetCode题解传送门
+## LeetCode题解传送门
 
-下方对应是CSDN版本题解
-
-题解在的[CSDN](https://blog.csdn.net/jbj6568839z)和[Gitbook](https://webbj97.github.io/leetCode-Js/)上都有记录，希望大佬们批评指正，一起提高（顺便star下吧！！！）
+下方对应是CSDN版本题解，希望大佬们批评指正，一起提高（顺便star下吧！！！）
 
 ——————1-100
 
@@ -99,7 +89,6 @@
 * [182.查找重复的电子邮箱（sql）](https://blog.csdn.net/jbj6568839z/article/details/103782092)
 * [189.旋转数组](https://blog.csdn.net/jbj6568839z/article/details/103118847)
 * [196.删除重复的电子邮箱](https://blog.csdn.net/jbj6568839z/article/details/103783469)
-* [197.上升的温度（sql）]()
 
 ——————201-300
 
@@ -182,7 +171,8 @@
 * [976.三角形的最大周长](https://blog.csdn.net/jbj6568839z/article/details/103986774)
 * [977.有序数组的平方](https://blog.csdn.net/jbj6568839z/article/details/103993031)
 
-——————1001及之后
+——————1001及之后、
+
 * [1207.独一无二的出现次数](https://blog.csdn.net/jbj6568839z/article/details/103028658)
 * [1290.二进制链表转整数](https://blog.csdn.net/jbj6568839z/article/details/105674429)
 * [1295.统计位数为偶数的数字](https://blog.csdn.net/jbj6568839z/article/details/105586464)
@@ -190,43 +180,3 @@
 * [1323.6和9组成的最大数字](https://blog.csdn.net/jbj6568839z/article/details/105680729)
 * [1365.有多少小于当前数字的数字](https://blog.csdn.net/jbj6568839z/article/details/105652250)
 * [1389.按既定顺序创建目标数组](https://blog.csdn.net/jbj6568839z/article/details/105770848)
-
-### 数据结构分类
-
-专题仍然分几种，比如数组、对象层面的，比如对象经典算法，后续会将LeetCode题与专题对应上。
-
-* 数据类型分类
-    * 链表
-    * 双向链表
-    * 队列
-    * 栈
-    * 哈希表
-    * 堆 - 最大堆 & 最小堆
-    * 优先队列
-    * 字典树
-    * 树
-    * 图
-* 算法主题
-    * 数学
-    * 集合
-    * 字符串
-    * 搜索
-    * 排序
-    * 链表
-    * 树
-    * 图
-    * 加密
-* 算法范式——算法范式是一种通用方法，基于一类算法的设计。这是比算法更高的抽象，就像算法是比计算机程序更高的抽象。
-    * BF 算法 - 查找/搜索 所有可能性并选择最佳解决方案
-    * 贪心法 - 在当前选择最佳选项，不考虑以后情况
-    * 分治法 - 将问题分成较小的部分，然后解决这些部分
-    * 动态编程 - 使用以前找到的子解决方案构建解决方案
-    * 回溯法 - 类似于 BF 算法 试图产生所有可能的解决方案，但每次生成解决方案测试如果它满足所有条件，那么只有继续生成后续解决方案。否则回溯并继续寻找不同路径的解决方案。
-    * Branch & Bound - 记住在回溯搜索的每个阶段找到的成本最低的解决方案，并使用到目前为止找到的成本最小值作为下限。以便丢弃成本大于最小值的解决方案。通常，使用 BFS 遍历以及状态空间树的 DFS 遍历。
-
-### 预告
-
-* 完善LeetCode题解的数量
-* 提高LeetCode的质量
-* 添加专题系列，例如 动态规划专题、快慢指针专题
-
